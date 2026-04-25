@@ -1,30 +1,59 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Private Car Tours Da Nang — Tour Đà Nẵng Hội An Huế Trọn Gói</title>
-<meta name="description" content="Dịch vụ tour và xe riêng Miền Trung uy tín. Tour Đà Nẵng – Hội An – Huế – Bà Nà Hills – Mỹ Sơn. Xe đời mới, tài xế chuyên nghiệp, giá minh bạch."/>
-<meta name="keywords" content="tour đà nẵng hội an, thuê xe đà nẵng theo ngày, tour bà nà hills 1 ngày, danang private car tour, da nang hoi an day trip"/>
-<meta property="og:title" content="Private Car Tours Da Nang"/>
-<meta property="og:description" content="Tour Miền Trung Trọn Gói — Xe Riêng Chuyên Nghiệp"/>
-<meta property="og:type" content="website"/>
-<link rel="stylesheet" href="style.css"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous"/>
-<script type="application/ld+json">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Private Car Tours Da Nang — Tour Đà Nẵng Hội An Huế Trọn Gói</title>
+  <meta name="description"
+    content="Dịch vụ tour và xe riêng Miền Trung uy tín. Tour Đà Nẵng – Hội An – Huế – Bà Nà Hills – Mỹ Sơn. Xe đời mới, tài xế chuyên nghiệp, giá minh bạch." />
+  <meta name="keywords"
+    content="tour đà nẵng hội an, thuê xe đà nẵng theo ngày, tour bà nà hills 1 ngày, danang private car tour, da nang hoi an day trip" />
+  <meta property="og:title" content="Private Car Tours Da Nang" />
+  <meta property="og:description" content="Tour Miền Trung Trọn Gói — Xe Riêng Chuyên Nghiệp" />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    crossorigin="anonymous" />
+  <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"TravelAgency","name":"Private Car Tours Da Nang","telephone":"+84905951842","email":"dangvannghia1983@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Đà Nẵng","addressCountry":"VN"},"openingHours":"Mo-Su 06:00-22:00"},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Đặt tour như thế nào?","acceptedAnswer":{"@type":"Answer","text":"Nhắn tin qua Zalo/WhatsApp/Messenger hoặc điền form. Phản hồi trong 15 phút."}},{"@type":"Question","name":"Giá đã bao gồm những gì?","acceptedAnswer":{"@type":"Answer","text":"Giá trọn gói: xe + tài xế + xăng + phí cầu đường. Chưa bao gồm vé tham quan và ăn uống."}}]}]}
 </script>
 </head>
+
 <body>
 
-<!-- ============================================================ NAVBAR -->
-<nav id="navbar">
-  <div class="container nav-inner">
-    <a href="#hero" class="nav-logo">
-      <span class="logo-main">🚗 Private Car Tours</span>
-      <span class="logo-sub">Da Nang · Central Vietnam</span>
-    </a>
-    <ul class="nav-menu">
+  <!-- ============================================================ NAVBAR -->
+  <nav id="navbar">
+    <div class="container nav-inner">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-main">🚗 Private Car Tours</span>
+        <span class="logo-sub">Da Nang · Central Vietnam</span>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="#hero">Trang chủ</a></li>
+        <li><a href="#about-us">Về chúng tôi</a></li>
+        <li><a href="#services">Tour</a></li>
+        <li><a href="#reviews">Đánh giá</a></li>
+        <li><a href="#contact">Liên hệ</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+      <div class="nav-cta" style="display:flex;align-items:center;gap:10px;">
+        <div class="lang-toggle">
+          <button class="lang-btn active" data-lang="vi">🇻🇳 VI</button>
+          <button class="lang-btn" data-lang="en">🇬🇧 EN</button>
+        </div>
+        <button class="btn btn-gold" data-open-modal><i class="fa-brands fa-rocketchat"></i> <span data-vi="Tư vấn ngay"
+            data-en="Contact Now">Tư vấn ngay</span></button>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div id="mobile-menu" class="mobile-menu">
+    <ul>
       <li><a href="#hero">Trang chủ</a></li>
       <li><a href="#about-us">Về chúng tôi</a></li>
       <li><a href="#services">Tour</a></li>
@@ -32,693 +61,940 @@
       <li><a href="#contact">Liên hệ</a></li>
       <li><a href="blog.html">Blog</a></li>
     </ul>
-    <div class="nav-cta" style="display:flex;align-items:center;gap:10px;">
-      <div class="lang-toggle">
-        <button class="lang-btn active" data-lang="vi">🇻🇳 VI</button>
-        <button class="lang-btn" data-lang="en">🇬🇧 EN</button>
-      </div>
-      <button class="btn btn-gold" data-open-modal><i class="fa-brands fa-rocketchat"></i> <span data-vi="Tư vấn ngay" data-en="Contact Now">Tư vấn ngay</span></button>
+    <div class="lang-toggle" style="margin-top:14px;">
+      <button class="lang-btn active" data-lang="vi">🇻🇳 Tiếng Việt</button>
+      <button class="lang-btn" data-lang="en">🇬🇧 English</button>
     </div>
-    <button class="hamburger" id="hamburger" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
+    <button class="btn btn-gold" data-open-modal style="width:100%;justify-content:center;margin-top:12px;"><i
+        class="fa-brands fa-rocketchat"></i> <span data-vi="Tư vấn ngay" data-en="Contact Now">Tư vấn
+        ngay</span></button>
   </div>
-</nav>
 
-<!-- MOBILE MENU -->
-<div id="mobile-menu" class="mobile-menu">
-  <ul>
-    <li><a href="#hero">Trang chủ</a></li>
-    <li><a href="#about-us">Về chúng tôi</a></li>
-    <li><a href="#services">Tour</a></li>
-    <li><a href="#reviews">Đánh giá</a></li>
-    <li><a href="#contact">Liên hệ</a></li>
-    <li><a href="blog.html">Blog</a></li>
-  </ul>
-  <div class="lang-toggle" style="margin-top:14px;">
-    <button class="lang-btn active" data-lang="vi">🇻🇳 Tiếng Việt</button>
-    <button class="lang-btn" data-lang="en">🇬🇧 English</button>
-  </div>
-  <button class="btn btn-gold" data-open-modal style="width:100%;justify-content:center;margin-top:12px;"><i class="fa-brands fa-rocketchat"></i> <span data-vi="Tư vấn ngay" data-en="Contact Now">Tư vấn ngay</span></button>
-</div>
-
-<!-- ============================================================ HERO -->
-<section id="hero">
-  <div class="hero-slides">
-    <div class="hero-slide active" style="background-image:url('images/tour_ba_na.png')"></div>
-    <div class="hero-slide" style="background-image:url('images/tour_hoi_an.png')"></div>
-    <div class="hero-slide" style="background-image:url('images/tour_hue.png')"></div>
-    <div class="hero-slide" style="background-image:url('images/tour_danang.png')"></div>
-    <div class="hero-slide" style="background-image:url('images/tour_my_son.png')"></div>
-  </div>
-  <div class="hero-overlay"></div>
-  <div class="container">
-    <div class="hero-content">
-      <div class="hero-badge">⭐ Dịch vụ xe riêng cao cấp Miền Trung</div>
-      <h1 class="hero-title">
-        Private Car Tours
-        <span>Da Nang</span>
-      </h1>
-      <p class="hero-subtitle">Tour Miền Trung Trọn Gói — Xe Riêng Chuyên Nghiệp</p>
-      <p class="hero-tagline">Đà Nẵng • Hội An • Huế • Bà Nà • Mỹ Sơn — Chúng tôi đưa bạn đến tận nơi, đúng giờ, đúng giá, đúng trải nghiệm.</p>
-      <div class="hero-ctas">
-        <button class="btn btn-gold" data-open-modal>💬 Tư vấn miễn phí ngay</button>
-        <a href="#services" class="btn btn-outline">📋 Xem các tour</a>
-      </div>
+  <!-- ============================================================ HERO -->
+  <section id="hero">
+    <div class="hero-slides">
+      <div class="hero-slide active" style="background-image:url('images/tour_ba_na.png')"></div>
+      <div class="hero-slide" style="background-image:url('images/tour_hoi_an.png')"></div>
+      <div class="hero-slide" style="background-image:url('images/tour_hue.png')"></div>
+      <div class="hero-slide" style="background-image:url('images/tour_danang.png')"></div>
+      <div class="hero-slide" style="background-image:url('images/tour_my_son.png')"></div>
     </div>
-  </div>
-  <div class="hero-social-quick">
-    <a href="https://zalo.me/84905951842" target="_blank" title="Zalo" style="background:#0068FF;"><i class="fa-solid fa-comment-dots"></i><span class="tooltip">Zalo</span></a>
-    <a href="https://wa.me/84905951842?text=Xin+ch%C3%A0o" target="_blank" style="background:#25D366;"><i class="fa-brands fa-whatsapp"></i><span class="tooltip">WhatsApp</span></a>
-    <a href="https://m.me/61579280855597" target="_blank" style="background:#0084FF;"><i class="fa-brands fa-facebook-messenger"></i><span class="tooltip">Messenger</span></a>
-    <a href="mailto:dangvannghia1983@gmail.com" style="background:#EA4335;"><i class="fa-brands fa-google"></i><span class="tooltip">Gmail</span></a>
-  </div>
-  <div class="scroll-indicator">
-    <span>Scroll</span>
-    <div class="scroll-dot"></div>
-  </div>
-</section>
-
-<!-- ============================================================ ABOUT US -->
-<section id="about-us">
-  <div class="container">
-    <div class="about-grid">
-      <div class="about-img-wrap fade-up">
-        <img src="images/team_driver.png" alt="Xe riêng và tài xế chuyên nghiệp Private Car Tours Da Nang" loading="lazy"/>
-        <div class="about-img-badge">
-          <span class="badge-num">8+</span>
-          <span class="badge-text">Năm kinh nghiệm</span>
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">⭐ Dịch vụ xe riêng cao cấp Miền Trung</div>
+        <h1 class="hero-title">
+          Private Car Tours
+          <span>Da Nang</span>
+        </h1>
+        <p class="hero-subtitle">Tour Miền Trung Trọn Gói — Xe Riêng Chuyên Nghiệp</p>
+        <p class="hero-tagline">Đà Nẵng • Hội An • Huế • Bà Nà • Mỹ Sơn — Chúng tôi đưa bạn đến tận nơi, đúng giờ, đúng
+          giá, đúng trải nghiệm.</p>
+        <div class="hero-ctas">
+          <button class="btn btn-gold" data-open-modal>💬 Tư vấn miễn phí ngay</button>
+          <a href="#services" class="btn btn-outline">📋 Xem các tour</a>
         </div>
       </div>
-      <div class="about-text fade-up delay-2">
-        <p class="gold-accent" style="font-size:.85rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;">VỀ CHÚNG TÔI</p>
-        <h2 class="section-title">Người Bạn Đồng Hành Đáng Tin Cậy Tại Miền Trung</h2>
-        <p>Chúng tôi sinh ra từ đam mê với mảnh đất Miền Trung — nơi mỗi con đường, mỗi địa danh đều mang trong mình một câu chuyện. Với hơn 8 năm đồng hành cùng hàng nghìn du khách, <strong>Private Car Tours Da Nang</strong> hiểu từng cung đường, từng thời điểm đẹp nhất trong ngày để mang đến trải nghiệm hoàn hảo nhất cho bạn.</p>
-        <p>Từ những cặp đôi lãng mạn muốn ngắm bình minh trên Đèo Hải Vân, đến các gia đình vui vẻ khám phá Bà Nà Hills, hay nhóm bạn trẻ check-in Phố cổ Hội An — chúng tôi phục vụ tất cả, bằng trái tim và sự chuyên nghiệp.</p>
-        <p>Cam kết của chúng tôi: <strong>An toàn – Đúng giờ – Minh bạch giá.</strong> Không phụ phí ẩn, không bất ngờ khó chịu. Chỉ có những kỷ niệm đẹp mà bạn mang về.</p>
-        <div class="about-counters">
-          <div class="counter-card fade-up delay-1">
-            <div class="counter-icon">🗓</div>
-            <div class="counter-num" data-target="8">0</div>
-            <div class="counter-label">Năm kinh nghiệm</div>
+    </div>
+    <div class="hero-social-quick">
+      <a href="https://zalo.me/84905951842" target="_blank" title="Zalo" style="background:#0068FF;"><i
+          class="fa-solid fa-comment-dots"></i><span class="tooltip">Zalo</span></a>
+      <a href="https://wa.me/84905951842?text=Xin+ch%C3%A0o" target="_blank" style="background:#25D366;"><i
+          class="fa-brands fa-whatsapp"></i><span class="tooltip">WhatsApp</span></a>
+      <a href="https://m.me/61579280855597" target="_blank" style="background:#0084FF;"><i
+          class="fa-brands fa-facebook-messenger"></i><span class="tooltip">Messenger</span></a>
+      <a href="mailto:dangvannghia1983@gmail.com" style="background:#EA4335;"><i class="fa-brands fa-google"></i><span
+          class="tooltip">Gmail</span></a>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- ============================================================ ABOUT US -->
+  <section id="about-us">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img-wrap fade-up">
+          <img src="images/team_driver.png" alt="Xe riêng và tài xế chuyên nghiệp Private Car Tours Da Nang"
+            loading="lazy" />
+          <div class="about-img-badge">
+            <span class="badge-num">8+</span>
+            <span class="badge-text">Năm kinh nghiệm</span>
           </div>
-          <div class="counter-card fade-up delay-2">
-            <div class="counter-icon">😊</div>
-            <div class="counter-num" data-target="1000">0</div>
-            <div class="counter-label">Khách hàng hài lòng</div>
-          </div>
-          <div class="counter-card fade-up delay-3">
-            <div class="counter-icon">🗺</div>
-            <div class="counter-num" data-target="500">0</div>
-            <div class="counter-label">Điểm đến phục vụ</div>
-          </div>
-          <div class="counter-card fade-up delay-4">
-            <div class="counter-icon">⭐</div>
-            <div class="counter-num" style="font-size:2rem">4.9</div>
-            <div class="counter-label">Đánh giá trung bình</div>
+        </div>
+        <div class="about-text fade-up delay-2">
+          <p class="gold-accent"
+            style="font-size:.85rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;">VỀ
+            CHÚNG TÔI</p>
+          <h2 class="section-title">Người Bạn Đồng Hành Đáng Tin Cậy Tại Miền Trung</h2>
+          <p>Chúng tôi sinh ra từ đam mê với mảnh đất Miền Trung — nơi mỗi con đường, mỗi địa danh đều mang trong mình
+            một câu chuyện. Với hơn 8 năm đồng hành cùng hàng nghìn du khách, <strong>Private Car Tours Da Nang</strong>
+            hiểu từng cung đường, từng thời điểm đẹp nhất trong ngày để mang đến trải nghiệm hoàn hảo nhất cho bạn.</p>
+          <p>Từ những cặp đôi lãng mạn muốn ngắm bình minh trên Đèo Hải Vân, đến các gia đình vui vẻ khám phá Bà Nà
+            Hills, hay nhóm bạn trẻ check-in Phố cổ Hội An — chúng tôi phục vụ tất cả, bằng trái tim và sự chuyên
+            nghiệp.</p>
+          <p>Cam kết của chúng tôi: <strong>An toàn – Đúng giờ – Minh bạch giá.</strong> Không phụ phí ẩn, không bất ngờ
+            khó chịu. Chỉ có những kỷ niệm đẹp mà bạn mang về.</p>
+          <div class="about-counters">
+            <div class="counter-card fade-up delay-1">
+              <div class="counter-icon">🗓</div>
+              <div class="counter-num" data-target="8">0</div>
+              <div class="counter-label">Năm kinh nghiệm</div>
+            </div>
+            <div class="counter-card fade-up delay-2">
+              <div class="counter-icon">😊</div>
+              <div class="counter-num" data-target="1000">0</div>
+              <div class="counter-label">Khách hàng hài lòng</div>
+            </div>
+            <div class="counter-card fade-up delay-3">
+              <div class="counter-icon">🗺</div>
+              <div class="counter-num" data-target="500">0</div>
+              <div class="counter-label">Điểm đến phục vụ</div>
+            </div>
+            <div class="counter-card fade-up delay-4">
+              <div class="counter-icon">⭐</div>
+              <div class="counter-num" style="font-size:2rem">4.9</div>
+              <div class="counter-label">Đánh giá trung bình</div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ============================================================ CAR SHOWCASE -->
-<section id="car-showcase">
-  <div class="container">
-    <div class="car-showcase-header fade-up">
-      <p class="gold-accent" style="font-size:.85rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;">XE CỦA CHÚNG TÔI</p>
-      <h2 class="section-title light">Đội Xe Sạch Sẽ & Đời Mới</h2>
-      <p class="section-subtitle light">Toyota hiện đại — điều hòa mát lạnh, nội thất thoải mái cho mọi hành trình.</p>
-    </div>
-    <div class="car-showcase-grid">
-      <div class="car-card fade-up delay-1">
-        <img src="images/xe1.jpg" alt="Xe Toyota 7 chỗ Private Car Tours Da Nang" loading="lazy"/>
-        <div class="car-badge">Toyota</div>
-        <div class="car-card-overlay">
-          <div class="car-card-title">Xe 7 Chỗ Toyota</div>
-          <div class="car-card-desc">Phù hợp nhóm gia đình & bạn bè · Điều hòa 2 dàn · Cốp rộng</div>
+  <!-- ============================================================ CAR SHOWCASE -->
+  <section id="car-showcase">
+    <div class="container">
+      <div class="car-showcase-header fade-up">
+        <p class="gold-accent"
+          style="font-size:.85rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;">XE
+          CỦA CHÚNG TÔI</p>
+        <h2 class="section-title light">Đội Xe Sạch Sẽ & Đời Mới</h2>
+        <p class="section-subtitle light">Toyota hiện đại — điều hòa mát lạnh, nội thất thoải mái cho mọi hành trình.
+        </p>
+      </div>
+      <div class="car-showcase-grid">
+        <div class="car-card fade-up delay-1">
+          <img src="images/xe1.jpg" alt="Xe Toyota 7 chỗ Private Car Tours Da Nang" loading="lazy" />
+          <div class="car-badge">Toyota</div>
+          <div class="car-card-overlay">
+            <div class="car-card-title">Xe 7 Chỗ Toyota</div>
+            <div class="car-card-desc">Phù hợp nhóm gia đình & bạn bè · Điều hòa 2 dàn · Cốp rộng</div>
+          </div>
+        </div>
+        <div class="car-card fade-up delay-2">
+          <img src="images/xe2.jpg" alt="Xe Toyota 16 chỗ Private Car Tours Da Nang" loading="lazy" />
+          <div class="car-badge">Toyota</div>
+          <div class="car-card-overlay">
+            <div class="car-card-title">Xe 16 Chỗ Toyota</div>
+            <div class="car-card-desc">Lý tưởng cho nhóm đông · Tiết kiệm · Linh hoạt</div>
+          </div>
         </div>
       </div>
-      <div class="car-card fade-up delay-2">
-        <img src="images/xe2.jpg" alt="Xe Toyota 4 chỗ Private Car Tours Da Nang" loading="lazy"/>
-        <div class="car-badge">Toyota</div>
-        <div class="car-card-overlay">
-          <div class="car-card-title">Xe 4 Chỗ Toyota</div>
-          <div class="car-card-desc">Lý tưởng cho cặp đôi & cá nhân · Tiết kiệm · Linh hoạt</div>
+    </div>
+  </section>
+
+  <!-- ============================================================ WHY US -->
+  <section id="why-us">
+    <div class="container">
+      <p class="gold-accent"
+        style="font-size:.85rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;"
+        class="fade-up">TẠI SAO CHỌN CHÚNG TÔI?</p>
+      <h2 class="section-title light fade-up">Chúng Tôi Khác Biệt Ở Điều Gì?</h2>
+      <p class="section-subtitle light fade-up">Mỗi hành trình là một trải nghiệm được chăm chút từng chi tiết nhỏ nhất.
+      </p>
+      <div class="why-grid">
+        <div class="why-card fade-up delay-1">
+          <div class="why-icon">🚗</div>
+          <h3>Xe Đời Mới & Sạch Sẽ</h3>
+          <p>Đội xe Toyota hiện đại (4 chỗ, 7 chỗ, 16 chỗ VAN), điều hòa mát lạnh, nội thất sạch sẽ thoải mái suốt hành
+            trình dài nhất.</p>
+        </div>
+        <div class="why-card fade-up delay-2">
+          <div class="why-icon">👨‍✈️</div>
+          <h3>Tài Xế Chuyên Nghiệp</h3>
+          <p>Đúng giờ, thân thiện, am hiểu địa phương. Giao tiếp tiếng Anh cơ bản — sẵn sàng phục vụ khách quốc tế tận
+            tình.</p>
+        </div>
+        <div class="why-card fade-up delay-3">
+          <div class="why-icon">🗺️</div>
+          <h3>Lịch Trình Linh Hoạt</h3>
+          <p>Thiết kế tour riêng theo thời gian, ngân sách và sở thích của bạn. Dừng thêm điểm, thay đổi lộ trình —
+            không vấn đề!</p>
+        </div>
+        <div class="why-card fade-up delay-4">
+          <div class="why-icon">💰</div>
+          <h3>Giá Minh Bạch</h3>
+          <p>Báo giá trọn gói ngay từ đầu. Không phụ phí ẩn, không bất ngờ. Những gì chúng tôi nói là những gì bạn trả.
+          </p>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ============================================================ WHY US -->
-<section id="why-us">
-  <div class="container">
-    <p class="gold-accent" style="font-size:.85rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;" class="fade-up">TẠI SAO CHỌN CHÚNG TÔI?</p>
-    <h2 class="section-title light fade-up">Chúng Tôi Khác Biệt Ở Điều Gì?</h2>
-    <p class="section-subtitle light fade-up">Mỗi hành trình là một trải nghiệm được chăm chút từng chi tiết nhỏ nhất.</p>
-    <div class="why-grid">
-      <div class="why-card fade-up delay-1">
-        <div class="why-icon">🚗</div>
-        <h3>Xe Đời Mới & Sạch Sẽ</h3>
-        <p>Đội xe Toyota hiện đại (4 chỗ, 7 chỗ, 16 chỗ VAN), điều hòa mát lạnh, nội thất sạch sẽ thoải mái suốt hành trình dài nhất.</p>
-      </div>
-      <div class="why-card fade-up delay-2">
-        <div class="why-icon">👨‍✈️</div>
-        <h3>Tài Xế Chuyên Nghiệp</h3>
-        <p>Đúng giờ, thân thiện, am hiểu địa phương. Giao tiếp tiếng Anh cơ bản — sẵn sàng phục vụ khách quốc tế tận tình.</p>
-      </div>
-      <div class="why-card fade-up delay-3">
-        <div class="why-icon">🗺️</div>
-        <h3>Lịch Trình Linh Hoạt</h3>
-        <p>Thiết kế tour riêng theo thời gian, ngân sách và sở thích của bạn. Dừng thêm điểm, thay đổi lộ trình — không vấn đề!</p>
-      </div>
-      <div class="why-card fade-up delay-4">
-        <div class="why-icon">💰</div>
-        <h3>Giá Minh Bạch</h3>
-        <p>Báo giá trọn gói ngay từ đầu. Không phụ phí ẩn, không bất ngờ. Những gì chúng tôi nói là những gì bạn trả.</p>
+  <!-- ============================================================ TOURS -->
+  <section id="services">
+    <div class="container">
+      <p class="gold-accent"
+        style="font-size:.85rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;">CÁC
+        TOUR NỔI BẬT</p>
+      <h2 class="section-title fade-up">Khám Phá Miền Trung Cùng Chúng Tôi</h2>
+      <p class="section-subtitle fade-up">Chọn tour yêu thích hoặc để chúng tôi thiết kế riêng cho bạn.</p>
+      <div class="tours-grid">
+
+        <!-- Tour 1: Hoi An -->
+        <div class="tour-card fade-up">
+          <div class="tour-img-wrap">
+            <img src="images/tour_hoi_an.png" alt="Tour Đà Nẵng Hội An 1 ngày xe riêng" loading="lazy" />
+            <span class="tour-badge">🔥 Phổ biến</span>
+          </div>
+          <div class="tour-body">
+            <h3>Đà Nẵng – Hội An</h3>
+            <div class="tour-meta"><span>📅 1 ngày</span><span>🚗 Xe riêng</span></div>
+            <ul class="tour-highlights">
+              <li>⛰ Ngũ Hành Sơn</li>
+              <li>🧵 Làng Lụa</li>
+              <li>🌴 Thuyền Dừa</li>
+              <li>🏮 Phố Cổ</li>
+            </ul>
+            <p class="tour-for">👨‍👩‍👧 Gia đình – Cặp đôi – Nhóm bạn</p>
+            <p class="tour-price">Giá từ: <span>Liên hệ báo giá</span>/xe</p>
+            <div class="tour-actions">
+              <button class="btn btn-navy tour-accordion-toggle">📋 Xem lịch trình ▼</button>
+              <button class="btn btn-gold" data-open-modal>💬 Hỏi ngay</button>
+            </div>
+          </div>
+          <div class="tour-accordion">
+            <div class="tour-accordion-inner">
+              <h4>Lịch trình tham khảo</h4>
+              <div class="itinerary-item">
+                <div class="itinerary-dot"></div><span>07:30 — Đón tại khách sạn ở Đà Nẵng</span>
+              </div>
+              <div class="itinerary-item">
+                <div class="itinerary-dot"></div><span>08:00 — Tham quan Ngũ Hành Sơn & hang động</span>
+              </div>
+              <div class="itinerary-item">
+                <div class="itinerary-dot"></div><span>10:00 — Làng Lụa Hội An & thuyền thúng tre</span>
+              </div>
+              <div class="itinerary-item">
+                <div class="itinerary-dot"></div><span>12:00 — Ăn trưa (tự túc) tại Hội An</span>
+              </div>
+              <div class="itinerary-item">
+                <div class="itinerary-dot"></div><span>14:00 — Khám phá Phố Cổ Hội An, Chùa Cầu</span>
+              </div>
+              <div class="itinerary-item">
+                <div class="itinerary-dot"></div><span>17:00 — Biển Cửa Đại hoàng hôn</span>
+              </div>
+              <div class="itinerary-item">
+                <div class="itinerary-dot"></div><span>19:00 — Hội An đêm đèn lồng & trả khách sạn</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tour 2: Ba Na Hills -->
+        <div class="tour-card fade-up delay-1">
+          <div class="tour-img-wrap">
+            <img src="images/tour_ba_na.png" alt="Tour Bà Nà Hills Cầu Vàng 1 ngày" loading="lazy" />
+            <span class="tour-badge">⭐ HOT nhất</span>
+          </div>
+          <div class="tour-body">
+            <h3>Đà Nẵng – Bà Nà Hills</h3>
+            <div class="tour-meta"><span>📅 1 ngày</span><span>🚠 Cáp treo</span></div>
+            <ul class="tour-highlights">
+              <li>🌉 Cầu Vàng</li>
+              <li>🌸 Le Jardin</li>
+              <li>🏰 Làng Pháp</li>
+              <li>🎢 Fantasy Park</li>
+            </ul>
+            <p class="tour-for">👨‍👩‍👧 Mọi đối tượng</p>
+            <p class="tour-price">Giá từ: <span>Liên hệ báo giá</span>/xe</p>
+            <div class="tour-actions">
+              <button class="btn btn-navy tour-accordion-toggle">📋 Xem lịch trình ▼</button>
+              <button class="btn btn-gold" data-open-modal>💬 Hỏi ngay</button>
+            </div>
+          </div>
+          <div class="tour-accordion">
+            <div class="tour-accordion-inner">
+              <h4>Lịch trình tham khảo</h4>
+              <div class="itinerary-item">
+                <div class="itinerary-dot"></div><span>07:30 — Đón tại khách sạn, di chuyển lên núi</span>
+              </div>
+              <div class="itinerary-item">
+                <div class="itinerary-dot"></div><span>08:30 — Cáp treo lên đỉnh Bà Nà (kỷ lục thế giới)</span>
+              </div>
+              <div class="itinerary-item">
+                <div class="itinerary-dot"></div><span>09:00 — Cầu Vàng check-in & chụp ảnh</span>
+              </div>
+              <div class="itinerary-item">
+                <div class="itinerary-dot"></div><span>10:30 — Vườn hoa Le Jardin d'Amour</span>
+              </div>
+              <div class="itinerary-item">
+                <div class="itinerary-dot"></div><span>12:00 — Ăn trưa tại Bà Nà</span>
+              </div>
+              <div class="itinerary-item">
+                <div class="itinerary-dot"></div><span>13:30 — Làng Pháp cổ tích & Fantasy Park</span>
+              </div>
+              <div class="itinerary-item">
+                <div class="itinerary-dot"></div><span>17:00 — Xuống núi, trả về khách sạn</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tour 3: Hue -->
+        <div class="tour-card fade-up delay-2">
+          <div class="tour-img-wrap">
+            <img src="images/tour_hue.png" alt="Tour Đà Nẵng Huế 1 ngày qua Đèo Hải Vân" loading="lazy" />
+            <span class="tour-badge">🏯 Di sản UNESCO</span>
+          </div>
+          <div class="tour-body">
+            <h3>Đà Nẵng – Huế</h3>
+            <div class="tour-meta"><span>📅 1 ngày</span><span>🚗 Xe riêng</span></div>
+            <ul class="tour-highlights">
+              <li>⛰ Đèo Hải Vân</li>
+              <li>🏯 Đại Nội</li>
+              <li>🛕 Chùa Thiên Mụ</li>
+              <li>⚰️ Lăng tẩm</li>
+            </ul>
+            <p class="tour-for">🎓 Khách thích lịch sử – văn hóa</p>
+            <p class="tour-price">Giá từ: <span>Liên hệ báo giá</span>/xe</p>
+            <div class="tour-actions">
+              <button class="btn btn-navy tour-accordion-toggle">📋 Xem lịch trình ▼</button>
+              <button class="btn btn-gold" data-open-modal>💬 Hỏi ngay</button>
+            </div>
+          </div>
+          <div class="tour-accordion">
+            <div class="tour-accordion-inner">
+              <h4>Lịch trình tham khảo</h4>
+              <div class="itinerary-item">
+                <div class="itinerary-dot"></div><span>06:30 — Đón sớm, vượt Đèo Hải Vân</span>
+              </div>
+              <div class="itinerary-item">
+                <div class="itinerary-dot"></div><span>08:00 — Vịnh Lăng Cô ngắm cảnh</span>
+              </div>
+              <div class="itinerary-item">
+                <div class="itinerary-dot"></div><span>09:30 — Đại Nội – Hoàng cung triều Nguyễn</span>
+              </div>
+              <div class="itinerary-item">
+                <div class="itinerary-dot"></div><span>12:00 — Ăn trưa cơm Huế chính hiệu</span>
+              </div>
+              <div class="itinerary-item">
+                <div class="itinerary-dot"></div><span>13:30 — Chùa Thiên Mụ & Lăng Khải Định</span>
+              </div>
+              <div class="itinerary-item">
+                <div class="itinerary-dot"></div><span>16:30 — Về Đà Nẵng qua hầm Hải Vân</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tour 4: My Son -->
+        <div class="tour-card fade-up delay-3">
+          <div class="tour-img-wrap">
+            <img src="images/tour_my_son.png" alt="Tour Thánh địa Mỹ Sơn từ Đà Nẵng" loading="lazy" />
+            <span class="tour-badge">🛕 UNESCO</span>
+          </div>
+          <div class="tour-body">
+            <h3>Đà Nẵng – Mỹ Sơn</h3>
+            <div class="tour-meta"><span>📅 4–6 tiếng</span><span>🚗 Xe riêng</span></div>
+            <ul class="tour-highlights">
+              <li>🛕 Tháp Chăm cổ</li>
+              <li>🎭 Vũ điệu Chăm Pa</li>
+              <li>📸 Tháp Kalan</li>
+              <li>🌿 Rừng xanh</li>
+            </ul>
+            <p class="tour-for">🎓 Khách thích văn hóa – lịch sử</p>
+            <p class="tour-price">Giá từ: <span>Liên hệ báo giá</span>/xe</p>
+            <div class="tour-actions">
+              <button class="btn btn-navy tour-accordion-toggle">📋 Xem lịch trình ▼</button>
+              <button class="btn btn-gold" data-open-modal>💬 Hỏi ngay</button>
+            </div>
+          </div>
+          <div class="tour-accordion">
+            <div class="tour-accordion-inner">
+              <h4>Lịch trình tham khảo</h4>
+              <div class="itinerary-item">
+                <div class="itinerary-dot"></div><span>08:00 — Đón tại Đà Nẵng / Hội An</span>
+              </div>
+              <div class="itinerary-item">
+                <div class="itinerary-dot"></div><span>09:30 — Thánh địa Mỹ Sơn – tham quan quần thể tháp Chăm</span>
+              </div>
+              <div class="itinerary-item">
+                <div class="itinerary-dot"></div><span>11:00 — Xem biểu diễn vũ điệu Chăm Pa</span>
+              </div>
+              <div class="itinerary-item">
+                <div class="itinerary-dot"></div><span>12:30 — Ăn trưa & trả về</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tour 5: Da Nang City Tour -->
+        <div class="tour-card fade-up delay-1">
+          <div class="tour-img-wrap">
+            <img src="images/tour_danang.png" alt="Tour Đà Nẵng City Tour Cầu Rồng" loading="lazy" />
+            <span class="tour-badge">🌉 City Tour</span>
+          </div>
+          <div class="tour-body">
+            <h3>Đà Nẵng City Tour</h3>
+            <div class="tour-meta"><span>📅 1 ngày</span><span>🚗 Xe riêng</span></div>
+            <ul class="tour-highlights">
+              <li>🌉 Cầu Rồng</li>
+              <li>🛕 Chùa Linh Ứng</li>
+              <li>⛰ Ngũ Hành Sơn</li>
+              <li>🏖 Mỹ Khê</li>
+            </ul>
+            <p class="tour-for">👨‍👩‍👧 Mọi đối tượng</p>
+            <p class="tour-price">Giá từ: <span>Liên hệ báo giá</span>/xe</p>
+            <div class="tour-actions">
+              <button class="btn btn-navy tour-accordion-toggle">📋 Xem lịch trình ▼</button>
+              <button class="btn btn-gold" data-open-modal>💬 Hỏi ngay</button>
+            </div>
+          </div>
+          <div class="tour-accordion">
+            <div class="tour-accordion-inner">
+              <h4>Lịch trình tham khảo</h4>
+              <div class="itinerary-item">
+                <div class="itinerary-dot"></div><span>08:00 — Đón tại khách sạn</span>
+              </div>
+              <div class="itinerary-item">
+                <div class="itinerary-dot"></div><span>08:30 — Ngũ Hành Sơn & hang động</span>
+              </div>
+              <div class="itinerary-item">
+                <div class="itinerary-dot"></div><span>10:30 — Chùa Linh Ứng (Bán đảo Sơn Trà)</span>
+              </div>
+              <div class="itinerary-item">
+                <div class="itinerary-dot"></div><span>12:00 — Ăn trưa hải sản Mỹ Khê</span>
+              </div>
+              <div class="itinerary-item">
+                <div class="itinerary-dot"></div><span>14:00 — Biển Mỹ Khê & Cầu Tình Yêu</span>
+              </div>
+              <div class="itinerary-item">
+                <div class="itinerary-dot"></div><span>16:00 — Chợ Hàn ẩm thực</span>
+              </div>
+              <div class="itinerary-item">
+                <div class="itinerary-dot"></div><span>20:00 — Cầu Rồng phun lửa (cuối tuần)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tour 6: Custom -->
+        <div class="tour-card fade-up delay-2"
+          style="background:linear-gradient(135deg,var(--navy),var(--navy-light));color:white;border:none;">
+          <div class="tour-img-wrap">
+            <img src="images/tour_custom.png" alt="Thiết kế tour Miền Trung theo yêu cầu" loading="lazy" />
+            <span class="tour-badge" style="background:var(--navy);">✨ Riêng tư</span>
+          </div>
+          <div class="tour-body">
+            <h3 style="color:var(--gold-light);">Thiết Kế Tour Theo Yêu Cầu</h3>
+            <div class="tour-meta" style="color:var(--text-light)"><span>📅 1–5 ngày</span><span>🎯 Cá nhân hóa</span>
+            </div>
+            <p style="color:rgba(255,255,255,.72);font-size:.9rem;line-height:1.7;margin-bottom:20px;">Không có lịch
+              trình nào phù hợp? Hãy để chúng tôi thiết kế tour riêng dựa trên số ngày, ngân sách và sở thích của bạn —
+              độc nhất vô nhị!</p>
+            <button class="btn btn-gold" data-open-modal style="width:100%;justify-content:center;font-size:1rem;">💬 Tư
+              vấn thiết kế tour riêng</button>
+          </div>
+        </div>
+
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ============================================================ TOURS -->
-<section id="services">
-  <div class="container">
-    <p class="gold-accent" style="font-size:.85rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;">CÁC TOUR NỔI BẬT</p>
-    <h2 class="section-title fade-up">Khám Phá Miền Trung Cùng Chúng Tôi</h2>
-    <p class="section-subtitle fade-up">Chọn tour yêu thích hoặc để chúng tôi thiết kế riêng cho bạn.</p>
-    <div class="tours-grid">
-
-      <!-- Tour 1: Hoi An -->
-      <div class="tour-card fade-up">
-        <div class="tour-img-wrap">
-          <img src="images/tour_hoi_an.png" alt="Tour Đà Nẵng Hội An 1 ngày xe riêng" loading="lazy"/>
-          <span class="tour-badge">🔥 Phổ biến</span>
+  <!-- ============================================================ REVIEWS -->
+  <section id="reviews">
+    <div class="container">
+      <p class="gold-accent"
+        style="font-size:.85rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;">ĐÁNH
+        GIÁ</p>
+      <h2 class="section-title light fade-up">Khách Hàng Nói Gì Về Chúng Tôi?</h2>
+      <p class="section-subtitle light fade-up">Hơn 1,000 lượt đánh giá — trung bình 4.9/5 sao.</p>
+      <div class="reviews-slider">
+        <div class="reviews-track">
+          <!-- Slide 1: 3 reviews -->
+          <div class="review-card">
+            <div class="review-item">
+              <div class="review-stars">⭐⭐⭐⭐⭐</div>
+              <p class="review-text">"Chuyến đi Hội An của gia đình mình hoàn toàn vượt kỳ vọng! Anh tài xế rất nhiệt
+                tình, giới thiệu từng điểm tham quan rất kỹ. Xe sạch sẽ, mát lạnh. Con bé nhà mình thích lắm. Nhất định
+                sẽ book lại lần sau!"</p>
+              <div class="review-author">
+                <div class="review-avatar">👩</div>
+                <div>
+                  <div class="review-name">Chị Lan Anh</div>
+                  <div class="review-tour">🇻🇳 Hà Nội · Tour Hội An</div>
+                </div>
+              </div>
+            </div>
+            <div class="review-item">
+              <div class="review-stars">⭐⭐⭐⭐⭐</div>
+              <p class="review-text">"Tuyệt vời! Đi Bà Nà Hills với cả nhóm 6 người, xe 7 chỗ rộng rãi, anh tài xế vui
+                tính hay chuyện. Đặt qua Zalo siêu nhanh, báo giá rõ ràng không phát sinh thêm. Recommend 100%!"</p>
+              <div class="review-author">
+                <div class="review-avatar">👦</div>
+                <div>
+                  <div class="review-name">Anh Minh Tuấn</div>
+                  <div class="review-tour">🇻🇳 TP.HCM · Tour Bà Nà Hills</div>
+                </div>
+              </div>
+            </div>
+            <div class="review-item">
+              <div class="review-stars">⭐⭐⭐⭐⭐</div>
+              <p class="review-text">"We booked a private car to Hue and it was the best decision! The driver knew every
+                historical site and stopped at Hai Van Pass for amazing photos. Very professional service, punctual and
+                friendly. Highly recommend!"</p>
+              <div class="review-author">
+                <div class="review-avatar">👩</div>
+                <div>
+                  <div class="review-name">Sophie & Pierre</div>
+                  <div class="review-tour">🇫🇷 France · Da Nang – Hue Tour</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 2: 2 reviews -->
+          <div class="review-card">
+            <div class="review-item">
+              <div class="review-stars">⭐⭐⭐⭐⭐</div>
+              <p class="review-text">"Amazing experience! We did the My Son Sanctuary tour and our driver was incredibly
+                knowledgeable. The car was clean and air-conditioned. We were picked up right on time at our hotel. Will
+                definitely book again for our next Vietnam trip!"</p>
+              <div class="review-author">
+                <div class="review-avatar">👨</div>
+                <div>
+                  <div class="review-name">James & Emily</div>
+                  <div class="review-tour">🇺🇸 USA · My Son Sanctuary Tour</div>
+                </div>
+              </div>
+            </div>
+            <div class="review-item">
+              <div class="review-stars">⭐⭐⭐⭐⭐</div>
+              <p class="review-text">"다낭에서 호이안 투어 정말 최고였어요! 기사님이 너무 친절하고 시간도 정확하게 지켜주셨어요. 차도 깨끗하고 에어컨도 잘 나오고요. 가족여행에 완벽한
+                선택이었습니다. 다음에도 꼭 이용할게요!"</p>
+              <div class="review-author">
+                <div class="review-avatar">👨‍👩‍👧‍👦</div>
+                <div>
+                  <div class="review-name">Kim Soo Hyun</div>
+                  <div class="review-tour">🇰🇷 Korea · Hoi An Day Trip</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="tour-body">
-          <h3>Đà Nẵng – Hội An</h3>
-          <div class="tour-meta"><span>📅 1 ngày</span><span>🚗 Xe riêng</span></div>
-          <ul class="tour-highlights">
-            <li>⛰ Ngũ Hành Sơn</li><li>🧵 Làng Lụa</li><li>🌴 Thuyền Dừa</li><li>🏮 Phố Cổ</li>
+      </div>
+      <div class="slider-controls">
+        <button class="slider-btn" id="slider-prev">←</button>
+        <div class="slider-dots">
+          <div class="slider-dot active"></div>
+          <div class="slider-dot"></div>
+        </div>
+        <button class="slider-btn" id="slider-next">→</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ PHOTO GALLERY -->
+  <section id="photo-gallery">
+    <div class="container">
+      <div class="gallery-header fade-up">
+        <p class="gold-accent"
+          style="font-size:.85rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;">THƯ
+          VIỆN ẢNH</p>
+        <h2 class="section-title">Khoảnh Khắc Đáng Nhớ Cùng Khách Hàng</h2>
+        <p class="section-subtitle">Những hình ảnh thực tế từ các chuyến đi — niềm vui của khách hàng là động lực của
+          chúng tôi.</p>
+      </div>
+      <div class="gallery-grid" id="gallery-grid">
+        <div class="gallery-item fade-up" data-index="0"><img src="images/anhchupvoicactourdadi1.jpg"
+            alt="Ảnh chụp với khách tour 1" loading="lazy" /><span class="gallery-overlay-icon">🔍</span></div>
+        <div class="gallery-item fade-up delay-1" data-index="1"><img src="images/anhchupvoicactourdadi2.jpg"
+            alt="Ảnh chụp với khách tour 2" loading="lazy" /><span class="gallery-overlay-icon">🔍</span></div>
+        <div class="gallery-item fade-up delay-2" data-index="2"><img src="images/anhchupvoicactourdadi3.jpg"
+            alt="Ảnh chụp với khách tour 3" loading="lazy" /><span class="gallery-overlay-icon">🔍</span></div>
+        <div class="gallery-item fade-up delay-3" data-index="3"><img src="images/anhchupvoicactourdadi4.jpg"
+            alt="Ảnh chụp với khách tour 4" loading="lazy" /><span class="gallery-overlay-icon">🔍</span></div>
+        <div class="gallery-item fade-up" data-index="4"><img src="images/anhchupvoicactourdadi5.jpg"
+            alt="Ảnh chụp với khách tour 5" loading="lazy" /><span class="gallery-overlay-icon">🔍</span></div>
+        <div class="gallery-item fade-up delay-1" data-index="5"><img src="images/anhchupvoicactourdadi6.jpg"
+            alt="Ảnh chụp với khách tour 6" loading="lazy" /><span class="gallery-overlay-icon">🔍</span></div>
+        <div class="gallery-item fade-up delay-2" data-index="6"><img src="images/anhchupvoicactourdadi7.jpg"
+            alt="Ảnh chụp với khách tour 7" loading="lazy" /><span class="gallery-overlay-icon">🔍</span></div>
+        <div class="gallery-item fade-up delay-3" data-index="7"><img src="images/anhchupvoicactourdadi8.jpg"
+            alt="Ảnh chụp với khách tour 8" loading="lazy" /><span class="gallery-overlay-icon">🔍</span></div>
+        <div class="gallery-item fade-up" data-index="8"><img src="images/anhchupvoicactourdadi9.jpg"
+            alt="Ảnh chụp với khách tour 9" loading="lazy" /><span class="gallery-overlay-icon">🔍</span></div>
+        <div class="gallery-item fade-up delay-1" data-index="9"><img src="images/anhchupvoicactourdadi10.jpg"
+            alt="Ảnh chụp với khách tour 10" loading="lazy" /><span class="gallery-overlay-icon">🔍</span></div>
+        <div class="gallery-item fade-up delay-2" data-index="10"><img src="images/anhchupvoicactourdadi11.jpg"
+            alt="Ảnh chụp với khách tour 11" loading="lazy" /><span class="gallery-overlay-icon">🔍</span></div>
+        <div class="gallery-item fade-up delay-3" data-index="11"><img src="images/anhchupvoicactourdadi12.jpg"
+            alt="Ảnh chụp với khách tour 12" loading="lazy" /><span class="gallery-overlay-icon">🔍</span></div>
+        <div class="gallery-item fade-up" data-index="12"><img src="images/anhchupvoicactourdadi13.jpg"
+            alt="Ảnh chụp với khách tour 13" loading="lazy" /><span class="gallery-overlay-icon">🔍</span></div>
+        <div class="gallery-item fade-up delay-1" data-index="13"><img src="images/anhchupvoicactourdadi14.jpg"
+            alt="Ảnh chụp với khách tour 14" loading="lazy" /><span class="gallery-overlay-icon">🔍</span></div>
+        <div class="gallery-item fade-up delay-2" data-index="14"><img src="images/anhchupvoicactourdadi15.jpg"
+            alt="Ảnh chụp với khách tour 15" loading="lazy" /><span class="gallery-overlay-icon">🔍</span></div>
+        <div class="gallery-item fade-up delay-3" data-index="15"><img src="images/anhchupvoicactourdadi16.jpg"
+            alt="Ảnh chụp với khách tour 16" loading="lazy" /><span class="gallery-overlay-icon">🔍</span></div>
+        <div class="gallery-item fade-up" data-index="16"><img src="images/anhchupvoicactourdadi17.jpg"
+            alt="Ảnh chụp với khách tour 17" loading="lazy" /><span class="gallery-overlay-icon">🔍</span></div>
+        <div class="gallery-item fade-up delay-1" data-index="17"><img src="images/anhchupvoicactourdadi18.jpg"
+            alt="Ảnh chụp với khách tour 18" loading="lazy" /><span class="gallery-overlay-icon">🔍</span></div>
+        <div class="gallery-item fade-up delay-2" data-index="18"><img src="images/anhchupvoicactourdadi19.jpg"
+            alt="Ảnh chụp với khách tour 19" loading="lazy" /><span class="gallery-overlay-icon">🔍</span></div>
+        <div class="gallery-item fade-up delay-3" data-index="19"><img src="images/anhchupvoicactourdadi20.jpg"
+            alt="Ảnh chụp với khách tour 20" loading="lazy" /><span class="gallery-overlay-icon">🔍</span></div>
+        <div class="gallery-item fade-up" data-index="20"><img src="images/anhchupvoicactourdadi21.jpg"
+            alt="Ảnh chụp với khách tour 21" loading="lazy" /><span class="gallery-overlay-icon">🔍</span></div>
+        <div class="gallery-item fade-up delay-1" data-index="21"><img src="images/anhchupvoicactourdadi22.jpg"
+            alt="Ảnh chụp với khách tour 22" loading="lazy" /><span class="gallery-overlay-icon">🔍</span></div>
+        <div class="gallery-item fade-up delay-2" data-index="22"><img src="images/anhchupvoicactourdadi23.jpg"
+            alt="Ảnh chụp với khách tour 23" loading="lazy" /><span class="gallery-overlay-icon">🔍</span></div>
+        <div class="gallery-item fade-up delay-3" data-index="23"><img src="images/anhchupvoicactourdadi24.jpg"
+            alt="Ảnh chụp với khách tour 24" loading="lazy" /><span class="gallery-overlay-icon">🔍</span></div>
+        <div class="gallery-item fade-up" data-index="24"><img src="images/anhchupvoicactourdadi25.jpg"
+            alt="Ảnh chụp với khách tour 25" loading="lazy" /><span class="gallery-overlay-icon">🔍</span></div>
+        <div class="gallery-item fade-up delay-1" data-index="25"><img src="images/anhchupvoicactourdadi26.jpg"
+            alt="Ảnh chụp với khách tour 26" loading="lazy" /><span class="gallery-overlay-icon">🔍</span></div>
+        <div class="gallery-item fade-up delay-2" data-index="26"><img src="images/anhchupvoicactourdadi27.jpg"
+            alt="Ảnh chụp với khách tour 27" loading="lazy" /><span class="gallery-overlay-icon">🔍</span></div>
+      </div>
+      <div class="gallery-load-more fade-up">
+        <button class="btn btn-gold" data-open-modal>💬 Đặt tour & chụp kỷ niệm cùng chúng tôi</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <p class="gold-accent"
+        style="font-size:.85rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;">LIÊN HỆ
+      </p>
+      <h2 class="section-title fade-up">Sẵn Sàng Khởi Hành Cùng Chúng Tôi?</h2>
+      <p class="section-subtitle fade-up">Điền form hoặc liên hệ trực tiếp — chúng tôi phản hồi trong 15 phút.</p>
+      <div class="contact-grid">
+        <div class="contact-form-wrap fade-up">
+          <h3>Gửi Yêu Cầu Tư Vấn</h3>
+          <p>Chúng tôi sẽ liên hệ lại trong vòng 15 phút.</p>
+          <form id="contact-form">
+            <div class="form-row">
+              <div class="form-group"><label>Họ và tên *</label><input type="text" placeholder="Nguyễn Văn A"
+                  required /></div>
+              <div class="form-group"><label>Số điện thoại *</label><input type="tel" placeholder="+84 ..." required />
+              </div>
+            </div>
+            <div class="form-group"><label>Email</label><input type="email" placeholder="email@example.com" /></div>
+            <div class="form-group">
+              <label>Tour quan tâm</label>
+              <select>
+                <option value="">-- Chọn tour --</option>
+                <option>Đà Nẵng – Hội An</option>
+                <option>Đà Nẵng – Bà Nà Hills</option>
+                <option>Đà Nẵng – Huế</option>
+                <option>Đà Nẵng – Mỹ Sơn</option>
+                <option>Đà Nẵng City Tour</option>
+                <option>Thiết kế theo yêu cầu</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <div class="form-group"><label>Số người *</label><input type="number" placeholder="2" min="1" required />
+              </div>
+              <div class="form-group"><label>Ngày dự kiến *</label><input type="date" required /></div>
+            </div>
+            <div class="form-group"><label>Ghi chú thêm</label><textarea
+                placeholder="Yêu cầu đặc biệt, điểm đón, ..."></textarea></div>
+            <button type="submit" class="btn btn-gold form-submit">📨 Gửi yêu cầu tư vấn</button>
+            <div class="form-success" id="form-success">✅ Cảm ơn! Chúng tôi sẽ phản hồi trong 15 phút.</div>
+          </form>
+        </div>
+        <div class="contact-channels fade-up delay-2">
+          <h3>Liên Hệ Trực Tiếp</h3>
+          <p class="lead">Phản hồi ngay lập tức qua các kênh bên dưới</p>
+          <div class="channel-buttons">
+            <a href="https://zalo.me/84905951842" target="_blank" class="channel-btn ch-zalo">
+              <span class="ch-icon"><i class="fa-solid fa-comment-dots"></i></span>
+              <span class="ch-text">Chat Zalo<span class="ch-label">+84 90 595 18 42</span></span>
+              <span class="ch-arrow">→</span>
+            </a>
+            <a href="https://wa.me/84905951842?text=Xin+ch%C3%A0o,+t%C3%B4i+mu%E1%BB%91n+h%E1%BB%8Fi+v%E1%BB%81+tour"
+              target="_blank" class="channel-btn ch-whatsapp">
+              <span class="ch-icon"><i class="fa-brands fa-whatsapp"></i></span>
+              <span class="ch-text">WhatsApp<span class="ch-label">+84 90 595 18 42</span></span>
+              <span class="ch-arrow">→</span>
+            </a>
+            <a href="https://m.me/61579280855597" target="_blank" class="channel-btn ch-messenger">
+              <span class="ch-icon"><i class="fa-brands fa-facebook-messenger"></i></span>
+              <span class="ch-text">Facebook Messenger<span class="ch-label">Phản hồi ngay</span></span>
+              <span class="ch-arrow">→</span>
+            </a>
+            <a href="mailto:dangvannghia1983@gmail.com?subject=T%C6%B0+v%E1%BA%A5n+tour" class="channel-btn ch-gmail">
+              <span class="ch-icon"><i class="fa-brands fa-google"></i></span>
+              <span class="ch-text">Gmail<span class="ch-label">dangvannghia1983@gmail.com</span></span>
+              <span class="ch-arrow">→</span>
+            </a>
+          </div>
+          <div class="hotline-box">
+            <div class="hotline-icon">📞</div>
+            <div>
+              <div class="hotline-num">+84 90 595 18 42</div>
+              <div class="hotline-time" data-lang-key="hotline-time">⏰ Làm việc 6:00 – 22:00 hằng ngày</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ FAQ -->
+  <section id="faq">
+    <div class="container">
+      <p class="gold-accent"
+        style="font-size:.85rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;">FAQ</p>
+      <h2 class="section-title fade-up">Câu Hỏi Thường Gặp</h2>
+      <p class="section-subtitle fade-up">Không tìm thấy câu trả lời? Nhắn chúng tôi ngay!</p>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <div class="faq-question"><span>Đặt tour/xe như thế nào?</span>
+            <div class="faq-arrow">▼</div>
+          </div>
+          <div class="faq-answer">
+            <p>Nhắn tin qua Zalo, WhatsApp, Messenger hoặc điền form trên website. Chúng tôi phản hồi trong vòng 15 phút
+              và tư vấn miễn phí hoàn toàn.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question"><span>Giá đã bao gồm những gì?</span>
+            <div class="faq-arrow">▼</div>
+          </div>
+          <div class="faq-answer">
+            <p>Giá trọn gói: xe + tài xế + xăng + phí cầu đường. Chưa bao gồm: vé tham quan, ăn uống, tip tài xế (nếu
+              có).</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question"><span>Có thể đặt trước bao lâu? Hủy được không?</span>
+            <div class="faq-arrow">▼</div>
+          </div>
+          <div class="faq-answer">
+            <p>Nên đặt trước 1–3 ngày. Hủy trước 24 giờ không mất phí. Hủy trong 24 giờ có thể áp dụng phí hủy nhỏ.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question"><span>Xe đón tận nơi không?</span>
+            <div class="faq-arrow">▼</div>
+          </div>
+          <div class="faq-answer">
+            <p>Có. Đón tại khách sạn, sân bay, ga tàu bất kỳ tại Đà Nẵng, Hội An, Huế — không phụ phí thêm.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question"><span>Tour có tài xế kiêm hướng dẫn viên không?</span>
+            <div class="faq-arrow">▼</div>
+          </div>
+          <div class="faq-answer">
+            <p>Tài xế am hiểu địa phương và giới thiệu địa danh cơ bản. Nếu cần HDV chuyên nghiệp, báo trước để sắp xếp
+              (phụ phí riêng).</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question"><span>Có tour tiếng Anh không?</span>
+            <div class="faq-arrow">▼</div>
+          </div>
+          <div class="faq-answer">
+            <p>Có. Tài xế giao tiếp tiếng Anh cơ bản. Khách quốc tế vui lòng liên hệ qua WhatsApp để được tư vấn cụ thể
+              hơn.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question"><span>Thanh toán như thế nào?</span>
+            <div class="faq-arrow">▼</div>
+          </div>
+          <div class="faq-answer">
+            <p>Tiền mặt VND hoặc USD. Chuyển khoản ngân hàng. Ví điện tử: Momo, ZaloPay — linh hoạt theo yêu cầu khách.
+            </p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question"><span>Xe có bao nhiêu chỗ? Đoàn đông thì sao?</span>
+            <div class="faq-arrow">▼</div>
+          </div>
+          <div class="faq-answer">
+            <p>Có xe 4 chỗ, 7 chỗ, 16 chỗ VAN. Đoàn lớn hơn liên hệ để ghép xe hoặc thuê nhiều xe theo đoàn.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ BLOG PREVIEW -->
+  <section id="blog">
+    <div class="container">
+      <p class="gold-accent"
+        style="font-size:.85rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;">BLOG
+        &amp; KINH NGHIỆM</p>
+      <h2 class="section-title light fade-up">Cẩm Nang Du Lịch Miền Trung</h2>
+      <p class="section-subtitle light fade-up">Chia sẻ kinh nghiệm thực tế từ những chuyến đi.</p>
+      <div class="blog-grid">
+        <a href="blog.html" class="blog-card">
+          <div class="blog-card-img">🏮</div>
+          <div class="blog-meta"><span class="blog-cat">Kinh nghiệm</span><span class="blog-date">20/04/2026</span>
+          </div>
+          <h3>Kinh nghiệm du lịch Hội An 3 ngày 2 đêm từ A–Z</h3>
+          <p>Lịch trình chi tiết, địa điểm ăn uống, mua sắm và những điều nhất định phải làm khi đến Hội An...</p>
+        </a>
+        <a href="blog.html" class="blog-card">
+          <div class="blog-card-img">🌉</div>
+          <div class="blog-meta"><span class="blog-cat">So sánh</span><span class="blog-date">15/04/2026</span></div>
+          <h3>Bà Nà Hills nên đi tour hay tự đi? So sánh chi tiết</h3>
+          <p>Ưu và nhược điểm của từng lựa chọn, chi phí so sánh và lời khuyên từ người đã trải nghiệm cả hai...</p>
+        </a>
+        <a href="blog.html" class="blog-card">
+          <div class="blog-card-img">🍜</div>
+          <div class="blog-meta"><span class="blog-cat">Ẩm thực</span><span class="blog-date">10/04/2026</span></div>
+          <h3>Ăn gì ở Đà Nẵng — 15 món không thể bỏ lỡ</h3>
+          <p>Từ Mì Quảng đến Bánh mì Phượng, từ Hải sản tươi sống đến Bánh xèo giòn rụm — địa chỉ &amp; giá cả đầy đủ...
+          </p>
+        </a>
+      </div>
+      <div class="blog-cta">
+        <a href="blog.html" class="btn btn-gold">📖 Xem tất cả bài viết</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ FOOTER -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">🚗 Private Car Tours Da Nang</div>
+          <div class="footer-slogan">CENTRAL VIETNAM · PRIVATE CAR SERVICE</div>
+          <p class="footer-desc">Dịch vụ tour và xe riêng Miền Trung uy tín hàng đầu. Đà Nẵng – Hội An – Huế – Bà Nà
+            Hills – Mỹ Sơn. An toàn, đúng giờ, minh bạch giá.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Điều hướng</h4>
+          <ul class="footer-links">
+            <li><a href="#about-us">Về chúng tôi</a></li>
+            <li><a href="#services">Các tour</a></li>
+            <li><a href="#reviews">Đánh giá</a></li>
+            <li><a href="#contact">Liên hệ</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="blog.html">Blog</a></li>
           </ul>
-          <p class="tour-for">👨‍👩‍👧 Gia đình – Cặp đôi – Nhóm bạn</p>
-          <p class="tour-price">Giá từ: <span>Liên hệ báo giá</span>/xe</p>
-          <div class="tour-actions">
-            <button class="btn btn-navy tour-accordion-toggle">📋 Xem lịch trình ▼</button>
-            <button class="btn btn-gold" data-open-modal>💬 Hỏi ngay</button>
+        </div>
+        <div class="footer-col">
+          <h4>Thông tin liên hệ</h4>
+          <div class="footer-contact-item"><span class="icon">📞</span><a href="tel:+84905951842">+84 90 595 18 42</a>
           </div>
+          <div class="footer-contact-item"><span class="icon">📧</span><a
+              href="mailto:dangvannghia1983@gmail.com">dangvannghia1983@gmail.com</a></div>
+          <div class="footer-contact-item"><span class="icon">📍</span><span>Đà Nẵng, Việt Nam</span></div>
+          <div class="footer-contact-item"><span class="icon">⏰</span><span>6:00 – 22:00 hằng ngày</span></div>
         </div>
-        <div class="tour-accordion">
-          <div class="tour-accordion-inner">
-            <h4>Lịch trình tham khảo</h4>
-            <div class="itinerary-item"><div class="itinerary-dot"></div><span>07:30 — Đón tại khách sạn ở Đà Nẵng</span></div>
-            <div class="itinerary-item"><div class="itinerary-dot"></div><span>08:00 — Tham quan Ngũ Hành Sơn & hang động</span></div>
-            <div class="itinerary-item"><div class="itinerary-dot"></div><span>10:00 — Làng Lụa Hội An & thuyền thúng tre</span></div>
-            <div class="itinerary-item"><div class="itinerary-dot"></div><span>12:00 — Ăn trưa (tự túc) tại Hội An</span></div>
-            <div class="itinerary-item"><div class="itinerary-dot"></div><span>14:00 — Khám phá Phố Cổ Hội An, Chùa Cầu</span></div>
-            <div class="itinerary-item"><div class="itinerary-dot"></div><span>17:00 — Biển Cửa Đại hoàng hôn</span></div>
-            <div class="itinerary-item"><div class="itinerary-dot"></div><span>19:00 — Hội An đêm đèn lồng & trả khách sạn</span></div>
+        <div class="footer-col">
+          <h4>Theo dõi chúng tôi</h4>
+          <div class="footer-socials">
+            <a href="https://m.me/61579280855597" target="_blank" class="footer-social-btn" title="Facebook Messenger"
+              style="color:#0084FF;"><i class="fa-brands fa-facebook-messenger"></i></a>
+            <a href="https://zalo.me/84905951842" target="_blank" class="footer-social-btn" title="Zalo"
+              style="color:#0068FF;"><i class="fa-solid fa-comment-dots"></i></a>
+            <a href="#" class="footer-social-btn" title="TikTok" style="color:#fff;"><i
+                class="fa-brands fa-tiktok"></i></a>
+            <a href="#" class="footer-social-btn" title="Instagram" style="color:#E1306C;"><i
+                class="fa-brands fa-instagram"></i></a>
           </div>
-        </div>
-      </div>
-
-      <!-- Tour 2: Ba Na Hills -->
-      <div class="tour-card fade-up delay-1">
-        <div class="tour-img-wrap">
-          <img src="images/tour_ba_na.png" alt="Tour Bà Nà Hills Cầu Vàng 1 ngày" loading="lazy"/>
-          <span class="tour-badge">⭐ HOT nhất</span>
-        </div>
-        <div class="tour-body">
-          <h3>Đà Nẵng – Bà Nà Hills</h3>
-          <div class="tour-meta"><span>📅 1 ngày</span><span>🚠 Cáp treo</span></div>
-          <ul class="tour-highlights">
-            <li>🌉 Cầu Vàng</li><li>🌸 Le Jardin</li><li>🏰 Làng Pháp</li><li>🎢 Fantasy Park</li>
-          </ul>
-          <p class="tour-for">👨‍👩‍👧 Mọi đối tượng</p>
-          <p class="tour-price">Giá từ: <span>Liên hệ báo giá</span>/xe</p>
-          <div class="tour-actions">
-            <button class="btn btn-navy tour-accordion-toggle">📋 Xem lịch trình ▼</button>
-            <button class="btn btn-gold" data-open-modal>💬 Hỏi ngay</button>
-          </div>
-        </div>
-        <div class="tour-accordion">
-          <div class="tour-accordion-inner">
-            <h4>Lịch trình tham khảo</h4>
-            <div class="itinerary-item"><div class="itinerary-dot"></div><span>07:30 — Đón tại khách sạn, di chuyển lên núi</span></div>
-            <div class="itinerary-item"><div class="itinerary-dot"></div><span>08:30 — Cáp treo lên đỉnh Bà Nà (kỷ lục thế giới)</span></div>
-            <div class="itinerary-item"><div class="itinerary-dot"></div><span>09:00 — Cầu Vàng check-in & chụp ảnh</span></div>
-            <div class="itinerary-item"><div class="itinerary-dot"></div><span>10:30 — Vườn hoa Le Jardin d'Amour</span></div>
-            <div class="itinerary-item"><div class="itinerary-dot"></div><span>12:00 — Ăn trưa tại Bà Nà</span></div>
-            <div class="itinerary-item"><div class="itinerary-dot"></div><span>13:30 — Làng Pháp cổ tích & Fantasy Park</span></div>
-            <div class="itinerary-item"><div class="itinerary-dot"></div><span>17:00 — Xuống núi, trả về khách sạn</span></div>
+          <div style="margin-top:20px;">
+            <p style="font-size:.78rem;color:rgba(255,255,255,.4);margin-bottom:10px;">Tư vấn miễn phí ngay:</p>
+            <button class="btn btn-gold" data-open-modal style="padding:10px 20px;font-size:.85rem;">💬 Tư vấn
+              ngay</button>
           </div>
         </div>
       </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright © 2026 Private Car Tours Da Nang — Tất cả quyền được bảo lưu</p>
+    </div>
+  </footer>
 
-      <!-- Tour 3: Hue -->
-      <div class="tour-card fade-up delay-2">
-        <div class="tour-img-wrap">
-          <img src="images/tour_hue.png" alt="Tour Đà Nẵng Huế 1 ngày qua Đèo Hải Vân" loading="lazy"/>
-          <span class="tour-badge">🏯 Di sản UNESCO</span>
-        </div>
-        <div class="tour-body">
-          <h3>Đà Nẵng – Huế</h3>
-          <div class="tour-meta"><span>📅 1 ngày</span><span>🚗 Xe riêng</span></div>
-          <ul class="tour-highlights">
-            <li>⛰ Đèo Hải Vân</li><li>🏯 Đại Nội</li><li>🛕 Chùa Thiên Mụ</li><li>⚰️ Lăng tẩm</li>
-          </ul>
-          <p class="tour-for">🎓 Khách thích lịch sử – văn hóa</p>
-          <p class="tour-price">Giá từ: <span>Liên hệ báo giá</span>/xe</p>
-          <div class="tour-actions">
-            <button class="btn btn-navy tour-accordion-toggle">📋 Xem lịch trình ▼</button>
-            <button class="btn btn-gold" data-open-modal>💬 Hỏi ngay</button>
-          </div>
-        </div>
-        <div class="tour-accordion">
-          <div class="tour-accordion-inner">
-            <h4>Lịch trình tham khảo</h4>
-            <div class="itinerary-item"><div class="itinerary-dot"></div><span>06:30 — Đón sớm, vượt Đèo Hải Vân</span></div>
-            <div class="itinerary-item"><div class="itinerary-dot"></div><span>08:00 — Vịnh Lăng Cô ngắm cảnh</span></div>
-            <div class="itinerary-item"><div class="itinerary-dot"></div><span>09:30 — Đại Nội – Hoàng cung triều Nguyễn</span></div>
-            <div class="itinerary-item"><div class="itinerary-dot"></div><span>12:00 — Ăn trưa cơm Huế chính hiệu</span></div>
-            <div class="itinerary-item"><div class="itinerary-dot"></div><span>13:30 — Chùa Thiên Mụ & Lăng Khải Định</span></div>
-            <div class="itinerary-item"><div class="itinerary-dot"></div><span>16:30 — Về Đà Nẵng qua hầm Hải Vân</span></div>
-          </div>
-        </div>
+  <!-- ============================================================ POPUP MODAL -->
+  <div id="contact-modal" class="modal-overlay">
+    <div class="modal-card">
+      <h3 data-lang-key="modal-title">Chọn Kênh Liên Hệ</h3>
+      <p class="modal-sub" data-lang-key="modal-sub">Chúng tôi phản hồi trong vòng 15 phút ⚡</p>
+      <div class="modal-channels">
+        <a href="https://zalo.me/84905951842" target="_blank" class="modal-channel-btn ch-zalo"><i
+            class="fa-solid fa-comment-dots"></i>Zalo</a>
+        <a href="https://wa.me/84905951842?text=Xin+ch%C3%A0o" target="_blank" class="modal-channel-btn ch-whatsapp"><i
+            class="fa-brands fa-whatsapp"></i>WhatsApp</a>
+        <a href="https://m.me/61579280855597" target="_blank" class="modal-channel-btn ch-messenger"><i
+            class="fa-brands fa-facebook-messenger"></i>Messenger</a>
+        <a href="mailto:dangvannghia1983@gmail.com" class="modal-channel-btn ch-gmail"><i
+            class="fa-brands fa-google"></i>Gmail</a>
       </div>
-
-      <!-- Tour 4: My Son -->
-      <div class="tour-card fade-up delay-3">
-        <div class="tour-img-wrap">
-          <img src="images/tour_my_son.png" alt="Tour Thánh địa Mỹ Sơn từ Đà Nẵng" loading="lazy"/>
-          <span class="tour-badge">🛕 UNESCO</span>
-        </div>
-        <div class="tour-body">
-          <h3>Đà Nẵng – Mỹ Sơn</h3>
-          <div class="tour-meta"><span>📅 4–6 tiếng</span><span>🚗 Xe riêng</span></div>
-          <ul class="tour-highlights">
-            <li>🛕 Tháp Chăm cổ</li><li>🎭 Vũ điệu Chăm Pa</li><li>📸 Tháp Kalan</li><li>🌿 Rừng xanh</li>
-          </ul>
-          <p class="tour-for">🎓 Khách thích văn hóa – lịch sử</p>
-          <p class="tour-price">Giá từ: <span>Liên hệ báo giá</span>/xe</p>
-          <div class="tour-actions">
-            <button class="btn btn-navy tour-accordion-toggle">📋 Xem lịch trình ▼</button>
-            <button class="btn btn-gold" data-open-modal>💬 Hỏi ngay</button>
-          </div>
-        </div>
-        <div class="tour-accordion">
-          <div class="tour-accordion-inner">
-            <h4>Lịch trình tham khảo</h4>
-            <div class="itinerary-item"><div class="itinerary-dot"></div><span>08:00 — Đón tại Đà Nẵng / Hội An</span></div>
-            <div class="itinerary-item"><div class="itinerary-dot"></div><span>09:30 — Thánh địa Mỹ Sơn – tham quan quần thể tháp Chăm</span></div>
-            <div class="itinerary-item"><div class="itinerary-dot"></div><span>11:00 — Xem biểu diễn vũ điệu Chăm Pa</span></div>
-            <div class="itinerary-item"><div class="itinerary-dot"></div><span>12:30 — Ăn trưa & trả về</span></div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Tour 5: Da Nang City Tour -->
-      <div class="tour-card fade-up delay-1">
-        <div class="tour-img-wrap">
-          <img src="images/tour_danang.png" alt="Tour Đà Nẵng City Tour Cầu Rồng" loading="lazy"/>
-          <span class="tour-badge">🌉 City Tour</span>
-        </div>
-        <div class="tour-body">
-          <h3>Đà Nẵng City Tour</h3>
-          <div class="tour-meta"><span>📅 1 ngày</span><span>🚗 Xe riêng</span></div>
-          <ul class="tour-highlights">
-            <li>🌉 Cầu Rồng</li><li>🛕 Chùa Linh Ứng</li><li>⛰ Ngũ Hành Sơn</li><li>🏖 Mỹ Khê</li>
-          </ul>
-          <p class="tour-for">👨‍👩‍👧 Mọi đối tượng</p>
-          <p class="tour-price">Giá từ: <span>Liên hệ báo giá</span>/xe</p>
-          <div class="tour-actions">
-            <button class="btn btn-navy tour-accordion-toggle">📋 Xem lịch trình ▼</button>
-            <button class="btn btn-gold" data-open-modal>💬 Hỏi ngay</button>
-          </div>
-        </div>
-        <div class="tour-accordion">
-          <div class="tour-accordion-inner">
-            <h4>Lịch trình tham khảo</h4>
-            <div class="itinerary-item"><div class="itinerary-dot"></div><span>08:00 — Đón tại khách sạn</span></div>
-            <div class="itinerary-item"><div class="itinerary-dot"></div><span>08:30 — Ngũ Hành Sơn & hang động</span></div>
-            <div class="itinerary-item"><div class="itinerary-dot"></div><span>10:30 — Chùa Linh Ứng (Bán đảo Sơn Trà)</span></div>
-            <div class="itinerary-item"><div class="itinerary-dot"></div><span>12:00 — Ăn trưa hải sản Mỹ Khê</span></div>
-            <div class="itinerary-item"><div class="itinerary-dot"></div><span>14:00 — Biển Mỹ Khê & Cầu Tình Yêu</span></div>
-            <div class="itinerary-item"><div class="itinerary-dot"></div><span>16:00 — Chợ Hàn ẩm thực</span></div>
-            <div class="itinerary-item"><div class="itinerary-dot"></div><span>20:00 — Cầu Rồng phun lửa (cuối tuần)</span></div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Tour 6: Custom -->
-      <div class="tour-card fade-up delay-2" style="background:linear-gradient(135deg,var(--navy),var(--navy-light));color:white;border:none;">
-        <div class="tour-img-wrap">
-          <img src="images/tour_custom.png" alt="Thiết kế tour Miền Trung theo yêu cầu" loading="lazy"/>
-          <span class="tour-badge" style="background:var(--navy);">✨ Riêng tư</span>
-        </div>
-        <div class="tour-body">
-          <h3 style="color:var(--gold-light);">Thiết Kế Tour Theo Yêu Cầu</h3>
-          <div class="tour-meta" style="color:var(--text-light)"><span>📅 1–5 ngày</span><span>🎯 Cá nhân hóa</span></div>
-          <p style="color:rgba(255,255,255,.72);font-size:.9rem;line-height:1.7;margin-bottom:20px;">Không có lịch trình nào phù hợp? Hãy để chúng tôi thiết kế tour riêng dựa trên số ngày, ngân sách và sở thích của bạn — độc nhất vô nhị!</p>
-          <button class="btn btn-gold" data-open-modal style="width:100%;justify-content:center;font-size:1rem;">💬 Tư vấn thiết kế tour riêng</button>
-        </div>
-      </div>
-
+      <button class="modal-close" data-modal-close>✕ Đóng</button>
     </div>
   </div>
-</section>
 
-<!-- ============================================================ REVIEWS -->
-<section id="reviews">
-  <div class="container">
-    <p class="gold-accent" style="font-size:.85rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;">ĐÁNH GIÁ</p>
-    <h2 class="section-title light fade-up">Khách Hàng Nói Gì Về Chúng Tôi?</h2>
-    <p class="section-subtitle light fade-up">Hơn 1,000 lượt đánh giá — trung bình 4.9/5 sao.</p>
-    <div class="reviews-slider">
-      <div class="reviews-track">
-        <!-- Slide 1: 3 reviews -->
-        <div class="review-card">
-          <div class="review-item">
-            <div class="review-stars">⭐⭐⭐⭐⭐</div>
-            <p class="review-text">"Chuyến đi Hội An của gia đình mình hoàn toàn vượt kỳ vọng! Anh tài xế rất nhiệt tình, giới thiệu từng điểm tham quan rất kỹ. Xe sạch sẽ, mát lạnh. Con bé nhà mình thích lắm. Nhất định sẽ book lại lần sau!"</p>
-            <div class="review-author"><div class="review-avatar">👩</div><div><div class="review-name">Chị Lan Anh</div><div class="review-tour">🇻🇳 Hà Nội · Tour Hội An</div></div></div>
-          </div>
-          <div class="review-item">
-            <div class="review-stars">⭐⭐⭐⭐⭐</div>
-            <p class="review-text">"Tuyệt vời! Đi Bà Nà Hills với cả nhóm 6 người, xe 7 chỗ rộng rãi, anh tài xế vui tính hay chuyện. Đặt qua Zalo siêu nhanh, báo giá rõ ràng không phát sinh thêm. Recommend 100%!"</p>
-            <div class="review-author"><div class="review-avatar">👦</div><div><div class="review-name">Anh Minh Tuấn</div><div class="review-tour">🇻🇳 TP.HCM · Tour Bà Nà Hills</div></div></div>
-          </div>
-          <div class="review-item">
-            <div class="review-stars">⭐⭐⭐⭐⭐</div>
-            <p class="review-text">"We booked a private car to Hue and it was the best decision! The driver knew every historical site and stopped at Hai Van Pass for amazing photos. Very professional service, punctual and friendly. Highly recommend!"</p>
-            <div class="review-author"><div class="review-avatar">👩</div><div><div class="review-name">Sophie & Pierre</div><div class="review-tour">🇫🇷 France · Da Nang – Hue Tour</div></div></div>
-          </div>
-        </div>
-        <!-- Slide 2: 2 reviews -->
-        <div class="review-card">
-          <div class="review-item">
-            <div class="review-stars">⭐⭐⭐⭐⭐</div>
-            <p class="review-text">"Amazing experience! We did the My Son Sanctuary tour and our driver was incredibly knowledgeable. The car was clean and air-conditioned. We were picked up right on time at our hotel. Will definitely book again for our next Vietnam trip!"</p>
-            <div class="review-author"><div class="review-avatar">👨</div><div><div class="review-name">James & Emily</div><div class="review-tour">🇺🇸 USA · My Son Sanctuary Tour</div></div></div>
-          </div>
-          <div class="review-item">
-            <div class="review-stars">⭐⭐⭐⭐⭐</div>
-            <p class="review-text">"다낭에서 호이안 투어 정말 최고였어요! 기사님이 너무 친절하고 시간도 정확하게 지켜주셨어요. 차도 깨끗하고 에어컨도 잘 나오고요. 가족여행에 완벽한 선택이었습니다. 다음에도 꼭 이용할게요!"</p>
-            <div class="review-author"><div class="review-avatar">👨‍👩‍👧‍👦</div><div><div class="review-name">Kim Soo Hyun</div><div class="review-tour">🇰🇷 Korea · Hoi An Day Trip</div></div></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="slider-controls">
-      <button class="slider-btn" id="slider-prev">←</button>
-      <div class="slider-dots">
-        <div class="slider-dot active"></div>
-        <div class="slider-dot"></div>
-      </div>
-      <button class="slider-btn" id="slider-next">→</button>
+  <!-- ============================================================ ALWAYS-VISIBLE CONTACT SIDEBAR -->
+  <div class="contact-sidebar">
+    <a href="https://zalo.me/84905951842" target="_blank" class="contact-sidebar-item si-zalo" title="Zalo">
+      <span class="si-icon"><i class="fa-solid fa-comment-dots"></i></span>
+      <span class="si-label">Chat Zalo</span>
+    </a>
+    <a href="https://wa.me/84905951842?text=Xin+ch%C3%A0o" target="_blank" class="contact-sidebar-item si-wa"
+      title="WhatsApp">
+      <span class="si-icon"><i class="fa-brands fa-whatsapp"></i></span>
+      <span class="si-label">WhatsApp</span>
+    </a>
+    <a href="https://m.me/61579280855597" target="_blank" class="contact-sidebar-item si-msg" title="Messenger">
+      <span class="si-icon"><i class="fa-brands fa-facebook-messenger"></i></span>
+      <span class="si-label">Messenger</span>
+    </a>
+    <a href="mailto:dangvannghia1983@gmail.com" class="contact-sidebar-item si-gmail" title="Gmail">
+      <span class="si-icon"><i class="fa-brands fa-google"></i></span>
+      <span class="si-label">Gmail</span>
+    </a>
+    <a href="tel:+84905951842" class="contact-sidebar-item si-phone" title="Gọi ngay">
+      <span class="si-icon"><i class="fa-solid fa-phone"></i></span>
+      <span class="si-label">Gọi ngay</span>
+    </a>
+  </div>
+
+  <!-- ============================================================ MOBILE STICKY BAR -->
+  <div class="mobile-sticky-bar">
+    <div class="sticky-bar-inner">
+      <a href="tel:+84905951842" class="sticky-bar-item sticky-item-call"><span class="s-icon"><i
+            class="fa-solid fa-phone"></i></span>Gọi ngay</a>
+      <a href="https://zalo.me/84905951842" target="_blank" class="sticky-bar-item" style="color:#0068FF;"><span
+          class="s-icon"><i class="fa-solid fa-comment-dots"></i></span>Zalo</a>
+      <a href="https://wa.me/84905951842" target="_blank" class="sticky-bar-item" style="color:#25D366;"><span
+          class="s-icon"><i class="fa-brands fa-whatsapp"></i></span>WhatsApp</a>
+      <a href="https://m.me/61579280855597" target="_blank" class="sticky-bar-item" style="color:#0084FF;"><span
+          class="s-icon"><i class="fa-brands fa-facebook-messenger"></i></span>Messenger</a>
     </div>
   </div>
-</section>
 
-<!-- ============================================================ PHOTO GALLERY -->
-<section id="photo-gallery">
-  <div class="container">
-    <div class="gallery-header fade-up">
-      <p class="gold-accent" style="font-size:.85rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;">THƯ VIỆN ẢNH</p>
-      <h2 class="section-title">Khoảnh Khắc Đáng Nhớ Cùng Khách Hàng</h2>
-      <p class="section-subtitle">Những hình ảnh thực tế từ các chuyến đi — niềm vui của khách hàng là động lực của chúng tôi.</p>
+  <!-- ============================================================ LIGHTBOX -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true">
+    <div class="lightbox-inner">
+      <button class="lightbox-close" id="lightbox-close" aria-label="Đóng">✕</button>
+      <img id="lightbox-img" src="" alt="Ảnh tour phóng to" />
+      <div class="lightbox-counter" id="lightbox-counter"></div>
     </div>
-    <div class="gallery-grid" id="gallery-grid">
-      <div class="gallery-item fade-up" data-index="0"><img src="images/anhchupvoicactourdadi1.jpg" alt="Ảnh chụp với khách tour 1" loading="lazy"/><span class="gallery-overlay-icon">🔍</span></div>
-      <div class="gallery-item fade-up delay-1" data-index="1"><img src="images/anhchupvoicactourdadi2.jpg" alt="Ảnh chụp với khách tour 2" loading="lazy"/><span class="gallery-overlay-icon">🔍</span></div>
-      <div class="gallery-item fade-up delay-2" data-index="2"><img src="images/anhchupvoicactourdadi3.jpg" alt="Ảnh chụp với khách tour 3" loading="lazy"/><span class="gallery-overlay-icon">🔍</span></div>
-      <div class="gallery-item fade-up delay-3" data-index="3"><img src="images/anhchupvoicactourdadi4.jpg" alt="Ảnh chụp với khách tour 4" loading="lazy"/><span class="gallery-overlay-icon">🔍</span></div>
-      <div class="gallery-item fade-up" data-index="4"><img src="images/anhchupvoicactourdadi5.jpg" alt="Ảnh chụp với khách tour 5" loading="lazy"/><span class="gallery-overlay-icon">🔍</span></div>
-      <div class="gallery-item fade-up delay-1" data-index="5"><img src="images/anhchupvoicactourdadi6.jpg" alt="Ảnh chụp với khách tour 6" loading="lazy"/><span class="gallery-overlay-icon">🔍</span></div>
-      <div class="gallery-item fade-up delay-2" data-index="6"><img src="images/anhchupvoicactourdadi7.jpg" alt="Ảnh chụp với khách tour 7" loading="lazy"/><span class="gallery-overlay-icon">🔍</span></div>
-      <div class="gallery-item fade-up delay-3" data-index="7"><img src="images/anhchupvoicactourdadi8.jpg" alt="Ảnh chụp với khách tour 8" loading="lazy"/><span class="gallery-overlay-icon">🔍</span></div>
-      <div class="gallery-item fade-up" data-index="8"><img src="images/anhchupvoicactourdadi9.jpg" alt="Ảnh chụp với khách tour 9" loading="lazy"/><span class="gallery-overlay-icon">🔍</span></div>
-      <div class="gallery-item fade-up delay-1" data-index="9"><img src="images/anhchupvoicactourdadi10.jpg" alt="Ảnh chụp với khách tour 10" loading="lazy"/><span class="gallery-overlay-icon">🔍</span></div>
-      <div class="gallery-item fade-up delay-2" data-index="10"><img src="images/anhchupvoicactourdadi11.jpg" alt="Ảnh chụp với khách tour 11" loading="lazy"/><span class="gallery-overlay-icon">🔍</span></div>
-      <div class="gallery-item fade-up delay-3" data-index="11"><img src="images/anhchupvoicactourdadi12.jpg" alt="Ảnh chụp với khách tour 12" loading="lazy"/><span class="gallery-overlay-icon">🔍</span></div>
-      <div class="gallery-item fade-up" data-index="12"><img src="images/anhchupvoicactourdadi13.jpg" alt="Ảnh chụp với khách tour 13" loading="lazy"/><span class="gallery-overlay-icon">🔍</span></div>
-      <div class="gallery-item fade-up delay-1" data-index="13"><img src="images/anhchupvoicactourdadi14.jpg" alt="Ảnh chụp với khách tour 14" loading="lazy"/><span class="gallery-overlay-icon">🔍</span></div>
-      <div class="gallery-item fade-up delay-2" data-index="14"><img src="images/anhchupvoicactourdadi15.jpg" alt="Ảnh chụp với khách tour 15" loading="lazy"/><span class="gallery-overlay-icon">🔍</span></div>
-      <div class="gallery-item fade-up delay-3" data-index="15"><img src="images/anhchupvoicactourdadi16.jpg" alt="Ảnh chụp với khách tour 16" loading="lazy"/><span class="gallery-overlay-icon">🔍</span></div>
-      <div class="gallery-item fade-up" data-index="16"><img src="images/anhchupvoicactourdadi17.jpg" alt="Ảnh chụp với khách tour 17" loading="lazy"/><span class="gallery-overlay-icon">🔍</span></div>
-      <div class="gallery-item fade-up delay-1" data-index="17"><img src="images/anhchupvoicactourdadi18.jpg" alt="Ảnh chụp với khách tour 18" loading="lazy"/><span class="gallery-overlay-icon">🔍</span></div>
-      <div class="gallery-item fade-up delay-2" data-index="18"><img src="images/anhchupvoicactourdadi19.jpg" alt="Ảnh chụp với khách tour 19" loading="lazy"/><span class="gallery-overlay-icon">🔍</span></div>
-      <div class="gallery-item fade-up delay-3" data-index="19"><img src="images/anhchupvoicactourdadi20.jpg" alt="Ảnh chụp với khách tour 20" loading="lazy"/><span class="gallery-overlay-icon">🔍</span></div>
-      <div class="gallery-item fade-up" data-index="20"><img src="images/anhchupvoicactourdadi21.jpg" alt="Ảnh chụp với khách tour 21" loading="lazy"/><span class="gallery-overlay-icon">🔍</span></div>
-      <div class="gallery-item fade-up delay-1" data-index="21"><img src="images/anhchupvoicactourdadi22.jpg" alt="Ảnh chụp với khách tour 22" loading="lazy"/><span class="gallery-overlay-icon">🔍</span></div>
-      <div class="gallery-item fade-up delay-2" data-index="22"><img src="images/anhchupvoicactourdadi23.jpg" alt="Ảnh chụp với khách tour 23" loading="lazy"/><span class="gallery-overlay-icon">🔍</span></div>
-      <div class="gallery-item fade-up delay-3" data-index="23"><img src="images/anhchupvoicactourdadi24.jpg" alt="Ảnh chụp với khách tour 24" loading="lazy"/><span class="gallery-overlay-icon">🔍</span></div>
-      <div class="gallery-item fade-up" data-index="24"><img src="images/anhchupvoicactourdadi25.jpg" alt="Ảnh chụp với khách tour 25" loading="lazy"/><span class="gallery-overlay-icon">🔍</span></div>
-      <div class="gallery-item fade-up delay-1" data-index="25"><img src="images/anhchupvoicactourdadi26.jpg" alt="Ảnh chụp với khách tour 26" loading="lazy"/><span class="gallery-overlay-icon">🔍</span></div>
-      <div class="gallery-item fade-up delay-2" data-index="26"><img src="images/anhchupvoicactourdadi27.jpg" alt="Ảnh chụp với khách tour 27" loading="lazy"/><span class="gallery-overlay-icon">🔍</span></div>
-    </div>
-    <div class="gallery-load-more fade-up">
-      <button class="btn btn-gold" data-open-modal>💬 Đặt tour & chụp kỷ niệm cùng chúng tôi</button>
-    </div>
+    <button class="lightbox-prev" id="lightbox-prev" aria-label="Ảnh trước">‹</button>
+    <button class="lightbox-next" id="lightbox-next" aria-label="Ảnh kế">›</button>
   </div>
-</section>
 
-<!-- ============================================================ CONTACT -->
-<section id="contact">
-  <div class="container">
-    <p class="gold-accent" style="font-size:.85rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;">LIÊN HỆ</p>
-    <h2 class="section-title fade-up">Sẵn Sàng Khởi Hành Cùng Chúng Tôi?</h2>
-    <p class="section-subtitle fade-up">Điền form hoặc liên hệ trực tiếp — chúng tôi phản hồi trong 15 phút.</p>
-    <div class="contact-grid">
-      <div class="contact-form-wrap fade-up">
-        <h3>Gửi Yêu Cầu Tư Vấn</h3>
-        <p>Chúng tôi sẽ liên hệ lại trong vòng 15 phút.</p>
-        <form id="contact-form">
-          <div class="form-row">
-            <div class="form-group"><label>Họ và tên *</label><input type="text" placeholder="Nguyễn Văn A" required/></div>
-            <div class="form-group"><label>Số điện thoại *</label><input type="tel" placeholder="+84 ..." required/></div>
-          </div>
-          <div class="form-group"><label>Email</label><input type="email" placeholder="email@example.com"/></div>
-          <div class="form-group">
-            <label>Tour quan tâm</label>
-            <select>
-              <option value="">-- Chọn tour --</option>
-              <option>Đà Nẵng – Hội An</option>
-              <option>Đà Nẵng – Bà Nà Hills</option>
-              <option>Đà Nẵng – Huế</option>
-              <option>Đà Nẵng – Mỹ Sơn</option>
-              <option>Đà Nẵng City Tour</option>
-              <option>Thiết kế theo yêu cầu</option>
-            </select>
-          </div>
-          <div class="form-row">
-            <div class="form-group"><label>Số người *</label><input type="number" placeholder="2" min="1" required/></div>
-            <div class="form-group"><label>Ngày dự kiến *</label><input type="date" required/></div>
-          </div>
-          <div class="form-group"><label>Ghi chú thêm</label><textarea placeholder="Yêu cầu đặc biệt, điểm đón, ..."></textarea></div>
-          <button type="submit" class="btn btn-gold form-submit">📨 Gửi yêu cầu tư vấn</button>
-          <div class="form-success" id="form-success">✅ Cảm ơn! Chúng tôi sẽ phản hồi trong 15 phút.</div>
-        </form>
-      </div>
-      <div class="contact-channels fade-up delay-2">
-        <h3>Liên Hệ Trực Tiếp</h3>
-        <p class="lead">Phản hồi ngay lập tức qua các kênh bên dưới</p>
-        <div class="channel-buttons">
-          <a href="https://zalo.me/84905951842" target="_blank" class="channel-btn ch-zalo">
-            <span class="ch-icon"><i class="fa-solid fa-comment-dots"></i></span>
-            <span class="ch-text">Chat Zalo<span class="ch-label">+84 90 595 18 42</span></span>
-            <span class="ch-arrow">→</span>
-          </a>
-          <a href="https://wa.me/84905951842?text=Xin+ch%C3%A0o,+t%C3%B4i+mu%E1%BB%91n+h%E1%BB%8Fi+v%E1%BB%81+tour" target="_blank" class="channel-btn ch-whatsapp">
-            <span class="ch-icon"><i class="fa-brands fa-whatsapp"></i></span>
-            <span class="ch-text">WhatsApp<span class="ch-label">+84 90 595 18 42</span></span>
-            <span class="ch-arrow">→</span>
-          </a>
-          <a href="https://m.me/61579280855597" target="_blank" class="channel-btn ch-messenger">
-            <span class="ch-icon"><i class="fa-brands fa-facebook-messenger"></i></span>
-            <span class="ch-text">Facebook Messenger<span class="ch-label">Phản hồi ngay</span></span>
-            <span class="ch-arrow">→</span>
-          </a>
-          <a href="mailto:dangvannghia1983@gmail.com?subject=T%C6%B0+v%E1%BA%A5n+tour" class="channel-btn ch-gmail">
-            <span class="ch-icon"><i class="fa-brands fa-google"></i></span>
-            <span class="ch-text">Gmail<span class="ch-label">dangvannghia1983@gmail.com</span></span>
-            <span class="ch-arrow">→</span>
-          </a>
-        </div>
-        <div class="hotline-box">
-          <div class="hotline-icon">📞</div>
-          <div>
-            <div class="hotline-num">+84 90 595 18 42</div>
-            <div class="hotline-time" data-lang-key="hotline-time">⏰ Làm việc 6:00 – 22:00 hằng ngày</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================ FAQ -->
-<section id="faq">
-  <div class="container">
-    <p class="gold-accent" style="font-size:.85rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;">FAQ</p>
-    <h2 class="section-title fade-up">Câu Hỏi Thường Gặp</h2>
-    <p class="section-subtitle fade-up">Không tìm thấy câu trả lời? Nhắn chúng tôi ngay!</p>
-    <div class="faq-grid">
-      <div class="faq-item"><div class="faq-question"><span>Đặt tour/xe như thế nào?</span><div class="faq-arrow">▼</div></div><div class="faq-answer"><p>Nhắn tin qua Zalo, WhatsApp, Messenger hoặc điền form trên website. Chúng tôi phản hồi trong vòng 15 phút và tư vấn miễn phí hoàn toàn.</p></div></div>
-      <div class="faq-item"><div class="faq-question"><span>Giá đã bao gồm những gì?</span><div class="faq-arrow">▼</div></div><div class="faq-answer"><p>Giá trọn gói: xe + tài xế + xăng + phí cầu đường. Chưa bao gồm: vé tham quan, ăn uống, tip tài xế (nếu có).</p></div></div>
-      <div class="faq-item"><div class="faq-question"><span>Có thể đặt trước bao lâu? Hủy được không?</span><div class="faq-arrow">▼</div></div><div class="faq-answer"><p>Nên đặt trước 1–3 ngày. Hủy trước 24 giờ không mất phí. Hủy trong 24 giờ có thể áp dụng phí hủy nhỏ.</p></div></div>
-      <div class="faq-item"><div class="faq-question"><span>Xe đón tận nơi không?</span><div class="faq-arrow">▼</div></div><div class="faq-answer"><p>Có. Đón tại khách sạn, sân bay, ga tàu bất kỳ tại Đà Nẵng, Hội An, Huế — không phụ phí thêm.</p></div></div>
-      <div class="faq-item"><div class="faq-question"><span>Tour có tài xế kiêm hướng dẫn viên không?</span><div class="faq-arrow">▼</div></div><div class="faq-answer"><p>Tài xế am hiểu địa phương và giới thiệu địa danh cơ bản. Nếu cần HDV chuyên nghiệp, báo trước để sắp xếp (phụ phí riêng).</p></div></div>
-      <div class="faq-item"><div class="faq-question"><span>Có tour tiếng Anh không?</span><div class="faq-arrow">▼</div></div><div class="faq-answer"><p>Có. Tài xế giao tiếp tiếng Anh cơ bản. Khách quốc tế vui lòng liên hệ qua WhatsApp để được tư vấn cụ thể hơn.</p></div></div>
-      <div class="faq-item"><div class="faq-question"><span>Thanh toán như thế nào?</span><div class="faq-arrow">▼</div></div><div class="faq-answer"><p>Tiền mặt VND hoặc USD. Chuyển khoản ngân hàng. Ví điện tử: Momo, ZaloPay — linh hoạt theo yêu cầu khách.</p></div></div>
-      <div class="faq-item"><div class="faq-question"><span>Xe có bao nhiêu chỗ? Đoàn đông thì sao?</span><div class="faq-arrow">▼</div></div><div class="faq-answer"><p>Có xe 4 chỗ, 7 chỗ, 16 chỗ VAN. Đoàn lớn hơn liên hệ để ghép xe hoặc thuê nhiều xe theo đoàn.</p></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================ BLOG PREVIEW -->
-<section id="blog">
-  <div class="container">
-    <p class="gold-accent" style="font-size:.85rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;">BLOG &amp; KINH NGHIỆM</p>
-    <h2 class="section-title light fade-up">Cẩm Nang Du Lịch Miền Trung</h2>
-    <p class="section-subtitle light fade-up">Chia sẻ kinh nghiệm thực tế từ những chuyến đi.</p>
-    <div class="blog-grid">
-      <a href="blog.html" class="blog-card">
-        <div class="blog-card-img">🏮</div>
-        <div class="blog-meta"><span class="blog-cat">Kinh nghiệm</span><span class="blog-date">20/04/2026</span></div>
-        <h3>Kinh nghiệm du lịch Hội An 3 ngày 2 đêm từ A–Z</h3>
-        <p>Lịch trình chi tiết, địa điểm ăn uống, mua sắm và những điều nhất định phải làm khi đến Hội An...</p>
-      </a>
-      <a href="blog.html" class="blog-card">
-        <div class="blog-card-img">🌉</div>
-        <div class="blog-meta"><span class="blog-cat">So sánh</span><span class="blog-date">15/04/2026</span></div>
-        <h3>Bà Nà Hills nên đi tour hay tự đi? So sánh chi tiết</h3>
-        <p>Ưu và nhược điểm của từng lựa chọn, chi phí so sánh và lời khuyên từ người đã trải nghiệm cả hai...</p>
-      </a>
-      <a href="blog.html" class="blog-card">
-        <div class="blog-card-img">🍜</div>
-        <div class="blog-meta"><span class="blog-cat">Ẩm thực</span><span class="blog-date">10/04/2026</span></div>
-        <h3>Ăn gì ở Đà Nẵng — 15 món không thể bỏ lỡ</h3>
-        <p>Từ Mì Quảng đến Bánh mì Phượng, từ Hải sản tươi sống đến Bánh xèo giòn rụm — địa chỉ &amp; giá cả đầy đủ...</p>
-      </a>
-    </div>
-    <div class="blog-cta">
-      <a href="blog.html" class="btn btn-gold">📖 Xem tất cả bài viết</a>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================ FOOTER -->
-<footer id="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-col">
-        <div class="footer-logo">🚗 Private Car Tours Da Nang</div>
-        <div class="footer-slogan">CENTRAL VIETNAM · PRIVATE CAR SERVICE</div>
-        <p class="footer-desc">Dịch vụ tour và xe riêng Miền Trung uy tín hàng đầu. Đà Nẵng – Hội An – Huế – Bà Nà Hills – Mỹ Sơn. An toàn, đúng giờ, minh bạch giá.</p>
-      </div>
-      <div class="footer-col">
-        <h4>Điều hướng</h4>
-        <ul class="footer-links">
-          <li><a href="#about-us">Về chúng tôi</a></li>
-          <li><a href="#services">Các tour</a></li>
-          <li><a href="#reviews">Đánh giá</a></li>
-          <li><a href="#contact">Liên hệ</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="blog.html">Blog</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Thông tin liên hệ</h4>
-        <div class="footer-contact-item"><span class="icon">📞</span><a href="tel:+84905951842">+84 90 595 18 42</a></div>
-        <div class="footer-contact-item"><span class="icon">📧</span><a href="mailto:dangvannghia1983@gmail.com">dangvannghia1983@gmail.com</a></div>
-        <div class="footer-contact-item"><span class="icon">📍</span><span>Đà Nẵng, Việt Nam</span></div>
-        <div class="footer-contact-item"><span class="icon">⏰</span><span>6:00 – 22:00 hằng ngày</span></div>
-      </div>
-      <div class="footer-col">
-        <h4>Theo dõi chúng tôi</h4>
-        <div class="footer-socials">
-          <a href="https://m.me/61579280855597" target="_blank" class="footer-social-btn" title="Facebook Messenger" style="color:#0084FF;"><i class="fa-brands fa-facebook-messenger"></i></a>
-          <a href="https://zalo.me/84905951842" target="_blank" class="footer-social-btn" title="Zalo" style="color:#0068FF;"><i class="fa-solid fa-comment-dots"></i></a>
-          <a href="#" class="footer-social-btn" title="TikTok" style="color:#fff;"><i class="fa-brands fa-tiktok"></i></a>
-          <a href="#" class="footer-social-btn" title="Instagram" style="color:#E1306C;"><i class="fa-brands fa-instagram"></i></a>
-        </div>
-        <div style="margin-top:20px;">
-          <p style="font-size:.78rem;color:rgba(255,255,255,.4);margin-bottom:10px;">Tư vấn miễn phí ngay:</p>
-          <button class="btn btn-gold" data-open-modal style="padding:10px 20px;font-size:.85rem;">💬 Tư vấn ngay</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>Copyright © 2026 Private Car Tours Da Nang — Tất cả quyền được bảo lưu</p>
-  </div>
-</footer>
-
-<!-- ============================================================ POPUP MODAL -->
-<div id="contact-modal" class="modal-overlay">
-  <div class="modal-card">
-    <h3 data-lang-key="modal-title">Chọn Kênh Liên Hệ</h3>
-    <p class="modal-sub" data-lang-key="modal-sub">Chúng tôi phản hồi trong vòng 15 phút ⚡</p>
-    <div class="modal-channels">
-      <a href="https://zalo.me/84905951842" target="_blank" class="modal-channel-btn ch-zalo"><i class="fa-solid fa-comment-dots"></i>Zalo</a>
-      <a href="https://wa.me/84905951842?text=Xin+ch%C3%A0o" target="_blank" class="modal-channel-btn ch-whatsapp"><i class="fa-brands fa-whatsapp"></i>WhatsApp</a>
-      <a href="https://m.me/61579280855597" target="_blank" class="modal-channel-btn ch-messenger"><i class="fa-brands fa-facebook-messenger"></i>Messenger</a>
-      <a href="mailto:dangvannghia1983@gmail.com" class="modal-channel-btn ch-gmail"><i class="fa-brands fa-google"></i>Gmail</a>
-    </div>
-    <button class="modal-close" data-modal-close>✕ Đóng</button>
-  </div>
-</div>
-
-<!-- ============================================================ ALWAYS-VISIBLE CONTACT SIDEBAR -->
-<div class="contact-sidebar">
-  <a href="https://zalo.me/84905951842" target="_blank" class="contact-sidebar-item si-zalo" title="Zalo">
-    <span class="si-icon"><i class="fa-solid fa-comment-dots"></i></span>
-    <span class="si-label">Chat Zalo</span>
-  </a>
-  <a href="https://wa.me/84905951842?text=Xin+ch%C3%A0o" target="_blank" class="contact-sidebar-item si-wa" title="WhatsApp">
-    <span class="si-icon"><i class="fa-brands fa-whatsapp"></i></span>
-    <span class="si-label">WhatsApp</span>
-  </a>
-  <a href="https://m.me/61579280855597" target="_blank" class="contact-sidebar-item si-msg" title="Messenger">
-    <span class="si-icon"><i class="fa-brands fa-facebook-messenger"></i></span>
-    <span class="si-label">Messenger</span>
-  </a>
-  <a href="mailto:dangvannghia1983@gmail.com" class="contact-sidebar-item si-gmail" title="Gmail">
-    <span class="si-icon"><i class="fa-brands fa-google"></i></span>
-    <span class="si-label">Gmail</span>
-  </a>
-  <a href="tel:+84905951842" class="contact-sidebar-item si-phone" title="Gọi ngay">
-    <span class="si-icon"><i class="fa-solid fa-phone"></i></span>
-    <span class="si-label">Gọi ngay</span>
-  </a>
-</div>
-
-<!-- ============================================================ MOBILE STICKY BAR -->
-<div class="mobile-sticky-bar">
-  <div class="sticky-bar-inner">
-    <a href="tel:+84905951842" class="sticky-bar-item sticky-item-call"><span class="s-icon"><i class="fa-solid fa-phone"></i></span>Gọi ngay</a>
-    <a href="https://zalo.me/84905951842" target="_blank" class="sticky-bar-item" style="color:#0068FF;"><span class="s-icon"><i class="fa-solid fa-comment-dots"></i></span>Zalo</a>
-    <a href="https://wa.me/84905951842" target="_blank" class="sticky-bar-item" style="color:#25D366;"><span class="s-icon"><i class="fa-brands fa-whatsapp"></i></span>WhatsApp</a>
-    <a href="https://m.me/61579280855597" target="_blank" class="sticky-bar-item" style="color:#0084FF;"><span class="s-icon"><i class="fa-brands fa-facebook-messenger"></i></span>Messenger</a>
-  </div>
-</div>
-
-<!-- ============================================================ LIGHTBOX -->
-<div id="lightbox" class="lightbox" role="dialog" aria-modal="true">
-  <div class="lightbox-inner">
-    <button class="lightbox-close" id="lightbox-close" aria-label="Đóng">✕</button>
-    <img id="lightbox-img" src="" alt="Ảnh tour phóng to"/>
-    <div class="lightbox-counter" id="lightbox-counter"></div>
-  </div>
-  <button class="lightbox-prev" id="lightbox-prev" aria-label="Ảnh trước">‹</button>
-  <button class="lightbox-next" id="lightbox-next" aria-label="Ảnh kế">›</button>
-</div>
-
-<script src="i18n.js"></script>
-<script>window.I18N_MAP = I18N_MAP;</script>
-<script src="script.js"></script>
+  <script src="i18n.js"></script>
+  <script>window.I18N_MAP = I18N_MAP;</script>
+  <script src="script.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,1370 @@
+[
+  {
+    "id": "TC001",
+    "title": "Switch to English updates landing page text and persists after reload",
+    "description": "Verifies that switching to English updates the landing page content and the preference persists after a page reload.",
+    "category": "Language Switcher",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /index.html"
+      },
+      {
+        "type": "action",
+        "description": "Click the language toggle to switch to English."
+      },
+      {
+        "type": "action",
+        "description": "Reload the page."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the landing page content is displayed in English after reload."
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC002",
+    "title": "Navigate to sections via sticky menu and open contact modal",
+    "description": "Verifies that the sticky navigation scrolls to key landing page sections and that the primary CTA opens the contact modal successfully.",
+    "category": "Navigation",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /index.html"
+      },
+      {
+        "type": "action",
+        "description": "Click a top navigation link to a mid-page section (for example Tours)."
+      },
+      {
+        "type": "action",
+        "description": "Click a top navigation link to another section (for example Contact)."
+      },
+      {
+        "type": "action",
+        "description": "Click the primary CTA in the navigation to contact."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the contact modal is visible."
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC003",
+    "title": "Mobile hamburger menu navigates to a section and auto-closes",
+    "description": "Verifies that on a small viewport the hamburger menu opens, selecting a section link scrolls the page, and the menu auto-closes.",
+    "category": "Navigation",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /index.html"
+      },
+      {
+        "type": "action",
+        "description": "Resize the viewport to a small mobile size."
+      },
+      {
+        "type": "action",
+        "description": "Click the hamburger icon to open the mobile menu."
+      },
+      {
+        "type": "action",
+        "description": "Click a mobile menu item that navigates to a lower section (for example Reviews or Contact)."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the mobile menu is closed."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the page is scrolled to the selected section."
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC004",
+    "title": "Contact sidebar is visible and provides quick access to contact channels",
+    "description": "User can see the right-side contact sidebar and it presents multiple contact channel entry points.",
+    "category": "Contact Sidebar",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /index.html"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the tours section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the contact sidebar is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify multiple contact channel icons are displayed in the sidebar"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC005",
+    "title": "Launch WhatsApp contact from the modal in a new tab/deep link",
+    "description": "User can click WhatsApp in the contact modal and the browser initiates navigation to the WhatsApp target without breaking the current page session.",
+    "category": "Contact Modal",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /index.html"
+      },
+      {
+        "type": "action",
+        "description": "Click a call-to-action that opens the contact modal"
+      },
+      {
+        "type": "action",
+        "description": "Click the WhatsApp contact option in the modal"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the WhatsApp link is configured to open a new tab or deep link target"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC006",
+    "title": "Switch back to Vietnamese updates landing page text immediately",
+    "description": "Verifies that switching back to Vietnamese updates the landing page content without requiring a reload.",
+    "category": "Language Switcher",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /index.html"
+      },
+      {
+        "type": "action",
+        "description": "Click the language toggle to switch to English."
+      },
+      {
+        "type": "action",
+        "description": "Click the language toggle to switch to Vietnamese."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the landing page content is displayed in Vietnamese."
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC007",
+    "title": "Open Zalo from the contact sidebar",
+    "description": "User can click the Zalo icon in the contact sidebar and the browser initiates navigation to the Zalo chat target.",
+    "category": "Contact Sidebar",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /index.html"
+      },
+      {
+        "type": "action",
+        "description": "Click the Zalo contact option in the sidebar"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the Zalo option is configured with an external URL or deep link target"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC008",
+    "title": "Launch Zalo contact from the modal",
+    "description": "User can click Zalo in the contact modal and the browser initiates navigation to the Zalo chat target without UI errors.",
+    "category": "Contact Modal",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /index.html"
+      },
+      {
+        "type": "action",
+        "description": "Click a call-to-action that opens the contact modal"
+      },
+      {
+        "type": "action",
+        "description": "Click the Zalo contact option in the modal"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the Zalo link is configured with an external URL or deep link target"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC009",
+    "title": "Initiate a phone call from the contact sidebar",
+    "description": "User can click the phone icon in the contact sidebar and the browser initiates a call via a tel link.",
+    "category": "Contact Sidebar",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /index.html"
+      },
+      {
+        "type": "action",
+        "description": "Click the phone contact option in the sidebar"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the phone option uses a tel link"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC010",
+    "title": "Hero CTA opens the contact modal",
+    "description": "Verifies that a hero call-to-action intended for contacting opens the contact modal successfully.",
+    "category": "Hero Slideshow",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /index.html"
+      },
+      {
+        "type": "action",
+        "description": "Click the hero call-to-action intended to contact the company."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the contact modal is visible."
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC011",
+    "title": "Open contact modal from a landing-page CTA",
+    "description": "User can open the contact modal from a CTA on the landing page and sees the available contact channels.",
+    "category": "Contact Modal",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /index.html"
+      },
+      {
+        "type": "action",
+        "description": "Click a call-to-action that opens the contact modal"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the contact modal is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify contact channel options are displayed in the modal"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC012",
+    "title": "Contact CTA from navbar works after switching language",
+    "description": "Verifies that switching the language does not break the navbar contact CTA and it still opens the contact modal.",
+    "category": "Navigation",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /index.html"
+      },
+      {
+        "type": "action",
+        "description": "Click the language toggle to switch to English."
+      },
+      {
+        "type": "action",
+        "description": "Click the primary CTA in the navigation to contact."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the contact modal is visible."
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC013",
+    "title": "Submit contact form successfully with required fields and optional fields",
+    "description": "Verifies a visitor can submit the inquiry form with required and optional inputs and receives a success confirmation.",
+    "category": "Contact Form",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /index.html"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the Contact section"
+      },
+      {
+        "type": "action",
+        "description": "Fill a full name into the full name field"
+      },
+      {
+        "type": "action",
+        "description": "Fill a phone number into the phone field"
+      },
+      {
+        "type": "action",
+        "description": "Fill an email into the email field"
+      },
+      {
+        "type": "action",
+        "description": "Select a tour of interest from the tour dropdown"
+      },
+      {
+        "type": "action",
+        "description": "Fill a valid number into the group size field"
+      },
+      {
+        "type": "action",
+        "description": "Select a valid expected date in the date field"
+      },
+      {
+        "type": "action",
+        "description": "Fill a short note into the additional notes field"
+      },
+      {
+        "type": "action",
+        "description": "Submit the contact form"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a success confirmation is visible"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC014",
+    "title": "Launch Gmail email composer from the modal in a new tab",
+    "description": "User can click Gmail in the contact modal and the browser initiates an email compose action via a mailto link.",
+    "category": "Contact Modal",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /index.html"
+      },
+      {
+        "type": "action",
+        "description": "Click a call-to-action that opens the contact modal"
+      },
+      {
+        "type": "action",
+        "description": "Click the Gmail contact option in the modal"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the Gmail option uses a mailto link and is configured to open via a new tab or external handler"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC015",
+    "title": "Expand and collapse a tour itinerary accordion",
+    "description": "Verifies a visitor can open a tour itinerary to read details and then collapse it again.",
+    "category": "Tour Cards with Accordion",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /index.html"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the Tours section"
+      },
+      {
+        "type": "action",
+        "description": "Expand a tour's itinerary accordion"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the expanded itinerary details are displayed for the selected tour"
+      },
+      {
+        "type": "action",
+        "description": "Collapse the same tour's itinerary accordion"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the itinerary details are no longer displayed for the selected tour"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC016",
+    "title": "Open contact modal from a tour card CTA",
+    "description": "Verifies a visitor can start an inquiry from a tour card by opening the contact modal via the tour CTA.",
+    "category": "Tour Cards with Accordion",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /index.html"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the Tours section"
+      },
+      {
+        "type": "action",
+        "description": "Click a tour card contact CTA to enquire"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the contact modal is open"
+      },
+      {
+        "type": "action",
+        "description": "Close the contact modal"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the landing page remains usable after closing the modal"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC017",
+    "title": "Language toggle remains accessible and usable after section navigation",
+    "description": "Verifies that after navigating through sections, the language toggle remains available and the page continues to respond to navigation actions.",
+    "category": "Navigation",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /index.html"
+      },
+      {
+        "type": "action",
+        "description": "Click a top navigation link to scroll to a lower section (for example FAQ)."
+      },
+      {
+        "type": "action",
+        "description": "Scroll back near the top of the page."
+      },
+      {
+        "type": "action",
+        "description": "Click the language toggle to switch languages."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the landing page content updates to the newly selected language."
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC018",
+    "title": "Language choice persists across navigation within landing page sections",
+    "description": "Verifies that after selecting a language, in-page navigation to other sections keeps content in the chosen language.",
+    "category": "Language Switcher",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /index.html"
+      },
+      {
+        "type": "action",
+        "description": "Click the language toggle to switch to English."
+      },
+      {
+        "type": "action",
+        "description": "Click a navigation link to scroll to the Tours section."
+      },
+      {
+        "type": "action",
+        "description": "Click a navigation link to scroll to the FAQ section."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify content in the current section is displayed in English."
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC019",
+    "title": "Dismiss contact modal using the close control",
+    "description": "User can close the contact modal using the modal close control and continue browsing the landing page.",
+    "category": "Contact Modal",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /index.html"
+      },
+      {
+        "type": "action",
+        "description": "Click a call-to-action that opens the contact modal"
+      },
+      {
+        "type": "action",
+        "description": "Dismiss the modal using the modal close control"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the contact modal is not visible"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC020",
+    "title": "Blog CTA card routes visitors back to the landing page contact section",
+    "description": "Verifies that the blog CTA card navigates back to the landing page and lands the visitor at the contact section to start an enquiry.",
+    "category": "Blog Page",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /blog.html"
+      },
+      {
+        "type": "action",
+        "description": "Click the blog CTA card to contact"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the landing page contact section is displayed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC021",
+    "title": "Hero background rotates automatically over time",
+    "description": "Verifies that the hero section background changes automatically on an interval without user interaction.",
+    "category": "Hero Slideshow",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /index.html"
+      },
+      {
+        "type": "action",
+        "description": "Observe the hero background state."
+      },
+      {
+        "type": "action",
+        "description": "Wait for 6 seconds."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the hero background has changed from its initial state."
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC022",
+    "title": "Contact CTA remains usable after interacting with itinerary accordion",
+    "description": "Verifies the tour enquiry CTA still opens the contact modal after the user has expanded/collapsed itineraries.",
+    "category": "Tour Cards with Accordion",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /index.html"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the Tours section"
+      },
+      {
+        "type": "action",
+        "description": "Expand a tour's itinerary accordion"
+      },
+      {
+        "type": "action",
+        "description": "Collapse the itinerary accordion"
+      },
+      {
+        "type": "action",
+        "description": "Click the same tour card contact CTA to enquire"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the contact modal is open"
+      },
+      {
+        "type": "action",
+        "description": "Close the contact modal"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the Tours section remains browsable after closing the modal"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC023",
+    "title": "Hero CTA scrolls to Tours section",
+    "description": "Verifies that a hero call-to-action intended to browse tours scrolls the page to the Tours section.",
+    "category": "Hero Slideshow",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /index.html"
+      },
+      {
+        "type": "action",
+        "description": "Click the hero call-to-action intended to view tours."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the page is scrolled to the Tours section."
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC024",
+    "title": "Contact modal can be dismissed and browsing can continue",
+    "description": "Verifies that the contact modal can be closed via a standard dismissal control and the user can continue navigating the page afterwards.",
+    "category": "Navigation",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /index.html"
+      },
+      {
+        "type": "action",
+        "description": "Click the primary CTA in the navigation to contact."
+      },
+      {
+        "type": "action",
+        "description": "Close the contact modal using the modal close control."
+      },
+      {
+        "type": "action",
+        "description": "Click a navigation link to scroll to another section (for example Tours)."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the contact modal is not visible."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the page is scrolled to the selected section."
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC025",
+    "title": "Tour cards render consistently and are discoverable by scrolling",
+    "description": "Verifies visitors can reach the Tours section and see multiple tour cards presented for selection.",
+    "category": "Tour Cards with Accordion",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /index.html"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the Tours section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify multiple tour cards are displayed"
+      },
+      {
+        "type": "action",
+        "description": "Scroll within the Tours section to view additional tour cards (if present)"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify tour cards remain visible and selectable after scrolling"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC026",
+    "title": "Dismiss contact modal by clicking the overlay",
+    "description": "User can dismiss the contact modal by clicking outside the modal on the overlay.",
+    "category": "Contact Modal",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /index.html"
+      },
+      {
+        "type": "action",
+        "description": "Click a call-to-action that opens the contact modal"
+      },
+      {
+        "type": "action",
+        "description": "Click the modal overlay outside the modal content"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the contact modal is not visible"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC027",
+    "title": "Language persists after opening and closing the contact modal",
+    "description": "Verifies that opening and closing the contact modal does not reset the selected language.",
+    "category": "Language Switcher",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /index.html"
+      },
+      {
+        "type": "action",
+        "description": "Click the language toggle to switch to English."
+      },
+      {
+        "type": "action",
+        "description": "Click the primary CTA to open the contact modal."
+      },
+      {
+        "type": "action",
+        "description": "Close the contact modal using the modal close control."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the landing page content remains displayed in English."
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC028",
+    "title": "Blog listing renders article cards in a grid",
+    "description": "Verifies that the blog listing page loads and displays a grid of blog article cards for discovery.",
+    "category": "Blog Page",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /blog.html"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a grid of blog article cards is displayed"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC029",
+    "title": "Review slider autoplay advances through reviews",
+    "description": "Verifies the reviews slider automatically advances to a different review without user interaction.",
+    "category": "Reviews Slider",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /index.html"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the Reviews section"
+      },
+      {
+        "type": "action",
+        "description": "Wait for the reviews slider to autoplay"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the visible review changes after waiting"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC030",
+    "title": "Hamburger menu open/close toggles reliably on mobile",
+    "description": "Verifies that the mobile hamburger menu can be opened and closed without selecting a navigation item.",
+    "category": "Navigation",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /index.html"
+      },
+      {
+        "type": "action",
+        "description": "Resize the viewport to a small mobile size."
+      },
+      {
+        "type": "action",
+        "description": "Click the hamburger icon to open the mobile menu."
+      },
+      {
+        "type": "action",
+        "description": "Click the hamburger icon again to close the mobile menu."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the mobile menu is closed."
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC031",
+    "title": "Only one itinerary accordion stays open when switching tours",
+    "description": "Verifies switching between tour itinerary accordions results in only the latest selected itinerary remaining open.",
+    "category": "Tour Cards with Accordion",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /index.html"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the Tours section"
+      },
+      {
+        "type": "action",
+        "description": "Expand a tour's itinerary accordion"
+      },
+      {
+        "type": "action",
+        "description": "Expand a different tour's itinerary accordion"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify only one itinerary is expanded at a time"
+      },
+      {
+        "type": "action",
+        "description": "Collapse the currently expanded itinerary accordion"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify no itinerary details are displayed"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC032",
+    "title": "Enforce single-open behavior in the FAQ accordion",
+    "description": "User can open an FAQ item, opening a different item collapses the previous one, and clicking the open item collapses it.",
+    "category": "FAQ Accordion",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /index.html"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the FAQ section"
+      },
+      {
+        "type": "action",
+        "description": "Click an FAQ question to expand it"
+      },
+      {
+        "type": "action",
+        "description": "Click a different FAQ question to expand it"
+      },
+      {
+        "type": "action",
+        "description": "Click the currently open FAQ question to collapse it"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify no FAQ answer is expanded"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC033",
+    "title": "About counters animate when scrolled into view",
+    "description": "Verifies that scrolling to the About section triggers the counters to animate from 0 up to their target values.",
+    "category": "Animated Counters",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /index.html"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the About section"
+      },
+      {
+        "type": "action",
+        "description": "Wait for the counters animation to complete"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the About counters display their final non-zero target values"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC034",
+    "title": "Navigate reviews using previous and next controls",
+    "description": "Verifies visitors can browse reviews by using the slider prev/next controls and the displayed review updates accordingly.",
+    "category": "Reviews Slider",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /index.html"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the Reviews section"
+      },
+      {
+        "type": "action",
+        "description": "Click the next review control"
+      },
+      {
+        "type": "action",
+        "description": "Click the previous review control"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the visible review updates when navigating with prev/next controls"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC035",
+    "title": "Jump to a review using slider dots",
+    "description": "Verifies visitors can jump directly to a specific review slide via the dot navigation.",
+    "category": "Reviews Slider",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /index.html"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the Reviews section"
+      },
+      {
+        "type": "action",
+        "description": "Click a non-active slider dot"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a different review slide is displayed after selecting a dot"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC036",
+    "title": "Hero slideshow continues rotating after interacting with navigation",
+    "description": "Verifies that interacting with the page (scrolling/navigating sections) does not stop the hero slideshow from continuing to rotate.",
+    "category": "Hero Slideshow",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /index.html"
+      },
+      {
+        "type": "action",
+        "description": "Observe the hero background state."
+      },
+      {
+        "type": "action",
+        "description": "Click a navigation link to scroll to a mid-page section (for example About)."
+      },
+      {
+        "type": "action",
+        "description": "Click a navigation link to return to the top section (for example Home)."
+      },
+      {
+        "type": "action",
+        "description": "Wait for 6 seconds."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the hero background has changed from its initial state."
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC037",
+    "title": "Tour accordion toggle works repeatedly without breaking layout",
+    "description": "Verifies repeatedly expanding and collapsing the same tour itinerary continues to work reliably.",
+    "category": "Tour Cards with Accordion",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /index.html"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the Tours section"
+      },
+      {
+        "type": "action",
+        "description": "Expand a tour's itinerary accordion"
+      },
+      {
+        "type": "action",
+        "description": "Collapse the same tour's itinerary accordion"
+      },
+      {
+        "type": "action",
+        "description": "Expand the same tour's itinerary accordion again"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the itinerary details are displayed again without visual overlap or missing content"
+      },
+      {
+        "type": "action",
+        "description": "Collapse the itinerary accordion"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the itinerary details are hidden again"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC038",
+    "title": "Phone required field blocks submission when missing",
+    "description": "Verifies leaving the required phone field empty prevents form submission and shows validation feedback.",
+    "category": "Contact Form",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /index.html"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the Contact section"
+      },
+      {
+        "type": "action",
+        "description": "Fill a full name into the full name field"
+      },
+      {
+        "type": "action",
+        "description": "Select a tour of interest from the tour dropdown"
+      },
+      {
+        "type": "action",
+        "description": "Fill a valid number into the group size field"
+      },
+      {
+        "type": "action",
+        "description": "Select a valid expected date in the date field"
+      },
+      {
+        "type": "action",
+        "description": "Submit the contact form"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a validation error is displayed for the missing required phone field"
+      }
+    ],
+    "priority": "Low"
+  },
+  {
+    "id": "TC039",
+    "title": "Expand and collapse an FAQ item by clicking the same question",
+    "description": "User can toggle an FAQ answer open and closed by clicking the same question.",
+    "category": "FAQ Accordion",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /index.html"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the FAQ section"
+      },
+      {
+        "type": "action",
+        "description": "Click an FAQ question to expand it"
+      },
+      {
+        "type": "action",
+        "description": "Click the same FAQ question again"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the FAQ answer is collapsed"
+      }
+    ],
+    "priority": "Low"
+  },
+  {
+    "id": "TC040",
+    "title": "Blog article placeholder link does not break browsing session",
+    "description": "Verifies that clicking a blog article card opens its placeholder destination without breaking the site experience for the current tab.",
+    "category": "Blog Page",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /blog.html"
+      },
+      {
+        "type": "action",
+        "description": "Click a blog article card"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the current page remains usable and does not display a browser error page"
+      }
+    ],
+    "priority": "Low"
+  },
+  {
+    "id": "TC041",
+    "title": "Slider remains operable after manual navigation",
+    "description": "Verifies after clicking prev/next and dots, the slider continues to function and display reviews normally.",
+    "category": "Reviews Slider",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /index.html"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the Reviews section"
+      },
+      {
+        "type": "action",
+        "description": "Click the next review control"
+      },
+      {
+        "type": "action",
+        "description": "Click a slider dot"
+      },
+      {
+        "type": "action",
+        "description": "Click the previous review control"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a review is displayed and slider controls remain usable"
+      }
+    ],
+    "priority": "Low"
+  },
+  {
+    "id": "TC042",
+    "title": "Counters do not restart when scrolling away and back",
+    "description": "Verifies that once the About counters have finished counting up, scrolling away and returning does not restart the animation.",
+    "category": "Animated Counters",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /index.html"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the About section"
+      },
+      {
+        "type": "action",
+        "description": "Wait for the counters animation to complete"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to a section far below About"
+      },
+      {
+        "type": "action",
+        "description": "Scroll back to the About section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the About counters remain at their final values and do not count up again"
+      }
+    ],
+    "priority": "Low"
+  },
+  {
+    "id": "TC043",
+    "title": "HTML5 validation prevents submission when required fields are empty",
+    "description": "Verifies the form cannot be submitted with missing required fields and the browser displays validation feedback.",
+    "category": "Contact Form",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /index.html"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the Contact section"
+      },
+      {
+        "type": "action",
+        "description": "Submit the contact form without filling required fields"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a required-field validation error is displayed and submission does not complete"
+      }
+    ],
+    "priority": "Low"
+  },
+  {
+    "id": "TC044",
+    "title": "Hover reveals labels on contact sidebar icons",
+    "description": "User can hover over contact sidebar icons and see their labels reveal for better discoverability.",
+    "category": "Contact Sidebar",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /index.html"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the middle of the page"
+      },
+      {
+        "type": "action",
+        "description": "Hover over a contact icon in the sidebar"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the hovered contact option reveals a label or expanded state"
+      }
+    ],
+    "priority": "Low"
+  },
+  {
+    "id": "TC045",
+    "title": "Group size required field blocks submission when missing",
+    "description": "Verifies leaving the required group size field empty prevents form submission and shows validation feedback.",
+    "category": "Contact Form",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /index.html"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the Contact section"
+      },
+      {
+        "type": "action",
+        "description": "Fill a full name into the full name field"
+      },
+      {
+        "type": "action",
+        "description": "Fill a phone number into the phone field"
+      },
+      {
+        "type": "action",
+        "description": "Select a tour of interest from the tour dropdown"
+      },
+      {
+        "type": "action",
+        "description": "Select a valid expected date in the date field"
+      },
+      {
+        "type": "action",
+        "description": "Submit the contact form"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a validation error is displayed for the missing required group size field"
+      }
+    ],
+    "priority": "Low"
+  },
+  {
+    "id": "TC046",
+    "title": "FAQ accordion remains usable after scrolling through the page",
+    "description": "User can still expand an FAQ item after scrolling through other sections and returning to the FAQ section.",
+    "category": "FAQ Accordion",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /index.html"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the FAQ section"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the contact section"
+      },
+      {
+        "type": "action",
+        "description": "Scroll back to the FAQ section"
+      },
+      {
+        "type": "action",
+        "description": "Click an FAQ question to expand it"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the selected FAQ answer is visible"
+      }
+    ],
+    "priority": "Low"
+  },
+  {
+    "id": "TC047",
+    "title": "Counters remain visible and readable after animation ends",
+    "description": "Verifies that after the count-up completes, the counters remain visible and stable for continued browsing.",
+    "category": "Animated Counters",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /index.html"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the About section"
+      },
+      {
+        "type": "action",
+        "description": "Wait for the counters animation to complete"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify all counters in the About section are visible and show numeric values"
+      }
+    ],
+    "priority": "Low"
+  },
+  {
+    "id": "TC048",
+    "title": "Blog page does not show a broken language toggle UI",
+    "description": "Verifies that the blog listing page does not expose a non-functional language toggle that could confuse users.",
+    "category": "Blog Page",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /blog.html"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify there is no language toggle control displayed on the blog page"
+      }
+    ],
+    "priority": "Low"
+  }
+]

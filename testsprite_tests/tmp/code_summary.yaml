@@ -1,0 +1,181 @@
+version: "2"
+type: frontend
+tech_stack:
+  - HTML5
+  - CSS3
+  - Vanilla JavaScript (ES6+)
+  - Font Awesome 6.5.1
+  - Google Fonts (Playfair Display, Inter)
+routes:
+  - path: /index.html
+    file: index.html
+    auth_required: false
+    description: Main landing page with hero, about, tours, reviews, contact, FAQ, and blog preview sections
+  - path: /blog.html
+    file: blog.html
+    auth_required: false
+    description: Blog listing page with travel guide articles
+features:
+  - name: Navigation
+    description: Sticky navbar with menu links, language toggle, CTA button, and hamburger mobile menu
+    files:
+      - index.html
+      - script.js
+      - style.css
+    entry_route: /index.html
+    user_interactions:
+      - Click menu links to scroll to page sections
+      - Click hamburger icon to open mobile menu
+      - Click menu item in mobile menu to navigate and auto-close menu
+      - Click CTA button to open contact modal
+    api_calls: []
+    auth_required: false
+  - name: Language Switcher
+    description: Toggle between Vietnamese and English languages with full page translation
+    files:
+      - index.html
+      - i18n.js
+      - script.js
+    entry_route: /index.html
+    user_interactions:
+      - Click VI button to switch to Vietnamese
+      - Click EN button to switch to English
+      - All page text updates to selected language
+      - Language preference saved in localStorage
+    api_calls: []
+    auth_required: false
+  - name: Hero Slideshow
+    description: Auto-rotating background image slideshow with 5 tour destination images
+    files:
+      - index.html
+      - script.js
+      - style.css
+    entry_route: /index.html
+    user_interactions:
+      - View auto-rotating hero background images every 5 seconds
+      - Click CTA buttons to open contact modal or scroll to tours section
+    api_calls: []
+    auth_required: false
+  - name: Tour Cards with Accordion
+    description: 6 tour cards showing tour details with expandable itinerary accordion
+    files:
+      - index.html
+      - script.js
+      - style.css
+    entry_route: /index.html
+    user_interactions:
+      - View tour cards with images, highlights, and pricing
+      - Click "Xem lich trinh" button to expand/collapse itinerary accordion
+      - Click "Hoi ngay" button to open contact modal
+    api_calls: []
+    auth_required: false
+  - name: Reviews Slider
+    description: Customer testimonials slider with navigation controls
+    files:
+      - index.html
+      - script.js
+      - style.css
+    entry_route: /index.html
+    user_interactions:
+      - View customer reviews from multiple countries
+      - Click prev/next buttons to navigate between review slides
+      - Click slider dots to jump to specific slide
+    api_calls: []
+    auth_required: false
+  - name: Contact Form
+    description: Inquiry form with fields for name, phone, email, tour interest, group size, date, and notes
+    files:
+      - index.html
+      - script.js
+      - style.css
+    entry_route: /index.html
+    user_interactions:
+      - Fill in full name (required)
+      - Fill in phone number (required)
+      - Fill in email (optional)
+      - Select tour of interest from dropdown
+      - Enter number of people (required)
+      - Select expected date (required)
+      - Add additional notes (optional)
+      - Click submit button
+      - See success message after submission
+    api_calls: []
+    auth_required: false
+  - name: FAQ Accordion
+    description: 8 frequently asked questions with expand/collapse functionality
+    files:
+      - index.html
+      - script.js
+      - style.css
+    entry_route: /index.html
+    user_interactions:
+      - Click on a question to expand and show the answer
+      - Click again to collapse the answer
+      - Only one FAQ can be open at a time
+    api_calls: []
+    auth_required: false
+  - name: Contact Modal
+    description: Popup modal with quick links to Zalo, WhatsApp, Messenger, and Gmail
+    files:
+      - index.html
+      - script.js
+      - style.css
+    entry_route: /index.html
+    user_interactions:
+      - Click any CTA button with data-open-modal attribute to open modal
+      - Click Zalo button to open Zalo chat
+      - Click WhatsApp button to open WhatsApp
+      - Click Messenger button to open Facebook Messenger
+      - Click Gmail button to open email
+      - Click close button or overlay to dismiss modal
+    api_calls: []
+    auth_required: false
+  - name: Contact Sidebar
+    description: Always-visible contact sidebar on the right side with quick access to all contact channels
+    files:
+      - index.html
+      - style.css
+    entry_route: /index.html
+    user_interactions:
+      - Hover over sidebar icons to see labels expand
+      - Click Zalo icon to open Zalo
+      - Click WhatsApp icon to open WhatsApp
+      - Click Messenger icon to open Messenger
+      - Click Gmail icon to open email
+      - Click Phone icon to initiate call
+    api_calls: []
+    auth_required: false
+  - name: Animated Counters
+    description: Counter animation in About Us section showing statistics when scrolled into view
+    files:
+      - index.html
+      - script.js
+    entry_route: /index.html
+    user_interactions:
+      - Scroll to About Us section to trigger count-up animation
+      - See numbers animate from 0 to target values (8 years, 1000 customers, 500 destinations, 4.9 rating)
+    api_calls: []
+    auth_required: false
+  - name: Blog Page
+    description: Blog listing page with article cards and CTA
+    files:
+      - blog.html
+      - style.css
+      - script.js
+    entry_route: /blog.html
+    user_interactions:
+      - View blog article cards in grid layout
+      - Click article card to read more (placeholder links)
+      - Click CTA card to go to contact section
+    api_calls: []
+    auth_required: false
+known_limitations:
+  - issue: Blog article detail pages do not exist yet, all blog links point to # or blog.html
+    location: blog.html
+    impact: Users cannot read full blog articles
+  - issue: Contact form has no backend integration, form submission only shows success message locally
+    location: index.html
+    impact: Form data is not sent to any server or email
+  - issue: Blog page does not have language toggle functionality
+    location: blog.html
+    impact: Blog page content remains in Vietnamese only

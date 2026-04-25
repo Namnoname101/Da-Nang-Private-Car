@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Blog Du Lịch Miền Trung — Private Car Tours Da Nang</title>
+<meta name="description" content="Kinh nghiệm du lịch Miền Trung từ A–Z. Hội An, Đà Nẵng, Huế, Bà Nà Hills – chia sẻ thực tế từ chuyên gia địa phương."/>
+<link rel="stylesheet" href="style.css"/>
+<style>
+.blog-hero {
+  background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%);
+  padding: 140px 0 80px;
+  text-align: center;
+}
+.blog-hero h1 { color: var(--white); margin-bottom: 12px; }
+.blog-hero p { color: var(--text-light); max-width: 500px; margin: 0 auto; }
+.blog-section { padding: 80px 0; background: var(--off-white); min-height: 60vh; }
+.blog-full-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-top: 40px;
+}
+.blog-full-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(10,29,55,0.06);
+  transition: var(--transition);
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+}
+.blog-full-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-md); }
+.blog-full-img {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  background: linear-gradient(135deg, var(--navy-light), var(--navy));
+}
+.blog-full-body { padding: 24px; flex: 1; }
+.blog-full-meta { display: flex; gap: 10px; margin-bottom: 12px; align-items: center; }
+.blog-full-cat {
+  background: rgba(201,168,76,0.12);
+  color: var(--gold-dark);
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+.blog-full-date { font-size: 0.72rem; color: var(--text-muted); }
+.blog-full-body h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  color: var(--navy);
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+.blog-full-body p { font-size: 0.85rem; color: #4a5568; line-height: 1.7; }
+.blog-read-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--gold-dark);
+  font-size: 0.82rem;
+  font-weight: 600;
+  margin-top: 14px;
+}
+@media (max-width: 768px) {
+  .blog-full-grid { grid-template-columns: 1fr; }
+  .blog-hero { padding: 120px 0 60px; }
+}
+</style>
+</head>
+<body>
+
+<nav id="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-main">🚗 Private Car Tours</span>
+      <span class="logo-sub">Da Nang · Central Vietnam</span>
+    </a>
+    <ul class="nav-menu">
+      <li><a href="index.html">Trang chủ</a></li>
+      <li><a href="index.html#about-us">Về chúng tôi</a></li>
+      <li><a href="index.html#services">Tour</a></li>
+      <li><a href="index.html#reviews">Đánh giá</a></li>
+      <li><a href="index.html#contact">Liên hệ</a></li>
+      <li><a href="blog.html" style="color:var(--gold)">Blog</a></li>
+    </ul>
+    <div class="nav-cta">
+      <button class="btn btn-gold" data-open-modal>💬 Tư vấn ngay</button>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div id="mobile-menu" class="mobile-menu">
+  <ul>
+    <li><a href="index.html">Trang chủ</a></li>
+    <li><a href="index.html#services">Tour</a></li>
+    <li><a href="index.html#contact">Liên hệ</a></li>
+    <li><a href="blog.html">Blog</a></li>
+  </ul>
+  <button class="btn btn-gold" data-open-modal style="width:100%;justify-content:center;margin-top:16px;">💬 Tư vấn ngay</button>
+</div>
+
+<div class="blog-hero">
+  <div class="container">
+    <p class="gold-accent" style="font-size:.8rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;">BLOG & KINH NGHIỆM</p>
+    <h1>Cẩm Nang Du Lịch Miền Trung</h1>
+    <p>Chia sẻ kinh nghiệm thực tế từ những chuyến đi — giúp bạn lên kế hoạch hoàn hảo.</p>
+  </div>
+</div>
+
+<section class="blog-section">
+  <div class="container">
+    <div class="blog-full-grid">
+
+      <a href="#" class="blog-full-card">
+        <div class="blog-full-img">🏮</div>
+        <div class="blog-full-body">
+          <div class="blog-full-meta"><span class="blog-full-cat">Kinh nghiệm</span><span class="blog-full-date">20/04/2026</span></div>
+          <h2>Kinh nghiệm du lịch Hội An 3 ngày 2 đêm từ A–Z</h2>
+          <p>Lịch trình chi tiết, địa điểm ăn uống ngon nhất, mua sắm đặc sản và những điều nhất định phải làm khi đến Hội An — dành cho cả khách Việt lẫn quốc tế.</p>
+          <span class="blog-read-more">Đọc tiếp →</span>
+        </div>
+      </a>
+
+      <a href="#" class="blog-full-card">
+        <div class="blog-full-img">🌉</div>
+        <div class="blog-full-body">
+          <div class="blog-full-meta"><span class="blog-full-cat">So sánh</span><span class="blog-full-date">15/04/2026</span></div>
+          <h2>Bà Nà Hills nên đi tour hay tự đi? So sánh chi tiết</h2>
+          <p>Phân tích ưu và nhược điểm của từng lựa chọn, chi phí so sánh thực tế và lời khuyên chân thật từ người đã trải nghiệm cả hai phương án.</p>
+          <span class="blog-read-more">Đọc tiếp →</span>
+        </div>
+      </a>
+
+      <a href="#" class="blog-full-card">
+        <div class="blog-full-img">🍜</div>
+        <div class="blog-full-body">
+          <div class="blog-full-meta"><span class="blog-full-cat">Ẩm thực</span><span class="blog-full-date">10/04/2026</span></div>
+          <h2>Ăn gì ở Đà Nẵng — 15 món không thể bỏ lỡ</h2>
+          <p>Từ Mì Quảng, Bánh mì Phượng, hải sản tươi sống đến Bánh xèo giòn rụm. Địa chỉ quán ngon và giá cả tham khảo đầy đủ nhất 2026.</p>
+          <span class="blog-read-more">Đọc tiếp →</span>
+        </div>
+      </a>
+
+      <a href="#" class="blog-full-card">
+        <div class="blog-full-img">⛰️</div>
+        <div class="blog-full-body">
+          <div class="blog-full-meta"><span class="blog-full-cat">Địa điểm</span><span class="blog-full-date">05/04/2026</span></div>
+          <h2>Đèo Hải Vân đẹp nhất lúc nào trong ngày?</h2>
+          <p>Bí quyết chụp ảnh đẹp nhất trên Đèo Hải Vân — buổi sáng sớm hay hoàng hôn? Review từng khung giờ để bạn lên lịch chuẩn nhất.</p>
+          <span class="blog-read-more">Đọc tiếp →</span>
+        </div>
+      </a>
+
+      <a href="#" class="blog-full-card">
+        <div class="blog-full-img">🏯</div>
+        <div class="blog-full-body">
+          <div class="blog-full-meta"><span class="blog-full-cat">Lịch trình</span><span class="blog-full-date">01/04/2026</span></div>
+          <h2>Tour Huế 1 ngày có đủ chơi không?</h2>
+          <p>Câu trả lời thực tế: có thể thăm những điểm nào trong 1 ngày, nên bỏ điểm nào, và tips tối ưu thời gian để không lãng phí một phút nào.</p>
+          <span class="blog-read-more">Đọc tiếp →</span>
+        </div>
+      </a>
+
+      <a href="index.html#contact" class="blog-full-card" style="background:var(--navy);border:none;">
+        <div class="blog-full-img" style="background:rgba(201,168,76,.08);">✍️</div>
+        <div class="blog-full-body">
+          <div class="blog-full-meta"><span class="blog-full-cat" style="background:rgba(201,168,76,.2);color:var(--gold-light);">Tư vấn</span></div>
+          <h2 style="color:var(--gold-light);">Cần tư vấn lộ trình riêng?</h2>
+          <p style="color:rgba(255,255,255,.6);">Liên hệ ngay với đội ngũ chuyên gia của chúng tôi — thiết kế tour theo đúng sở thích và ngân sách của bạn. Hoàn toàn miễn phí!</p>
+          <span class="blog-read-more" style="color:var(--gold);">Nhắn tin ngay →</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer simple -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-logo">🚗 Private Car Tours Da Nang</div>
+        <p class="footer-desc">Dịch vụ tour và xe riêng Miền Trung uy tín. An toàn, đúng giờ, minh bạch giá.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Điều hướng</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="index.html#services">Các tour</a></li>
+          <li><a href="index.html#contact">Liên hệ</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Liên hệ</h4>
+        <div class="footer-contact-item"><span class="icon">📞</span><a href="tel:+84905951842">+84 90 595 18 42</a></div>
+        <div class="footer-contact-item"><span class="icon">📧</span><a href="mailto:dangvannghia1983@gmail.com">dangvannghia1983@gmail.com</a></div>
+      </div>
+      <div class="footer-col">
+        <h4>Mạng xã hội</h4>
+        <div class="footer-socials">
+          <a href="https://m.me/61579280855597" target="_blank" class="footer-social-btn">📘</a>
+          <a href="https://zalo.me/84905951842" target="_blank" class="footer-social-btn">💬</a>
+          <a href="#" class="footer-social-btn">📱</a>
+          <a href="#" class="footer-social-btn">📸</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom"><p>Copyright © 2026 Private Car Tours Da Nang</p></div>
+</footer>
+
+<!-- POPUP MODAL -->
+<div id="contact-modal" class="modal-overlay">
+  <div class="modal-card">
+    <h3>Chọn Kênh Liên Hệ</h3>
+    <p class="modal-sub">Chúng tôi phản hồi trong vòng 15 phút ⚡</p>
+    <div class="modal-channels">
+      <a href="https://zalo.me/84905951842" target="_blank" class="modal-channel-btn ch-zalo"><span class="ch-emoji">💬</span>Zalo</a>
+      <a href="https://wa.me/84905951842?text=Xin+ch%C3%A0o" target="_blank" class="modal-channel-btn ch-whatsapp"><span class="ch-emoji">💬</span>WhatsApp</a>
+      <a href="https://m.me/61579280855597" target="_blank" class="modal-channel-btn ch-messenger"><span class="ch-emoji">📘</span>Messenger</a>
+      <a href="mailto:dangvannghia1983@gmail.com" class="modal-channel-btn ch-gmail"><span class="ch-emoji">📧</span>Gmail</a>
+    </div>
+    <button class="modal-close" data-modal-close>✕ Đóng</button>
+  </div>
+</div>
+
+<!-- FAB -->
+<div class="fab-wrap">
+  <button class="fab-main" aria-label="Liên hệ">💬</button>
+  <div class="fab-children">
+    <a href="mailto:dangvannghia1983@gmail.com" class="fab-child fab-gmail"><span class="fab-tooltip">Gmail</span>📧</a>
+    <a href="https://m.me/61579280855597" target="_blank" class="fab-child fab-msg"><span class="fab-tooltip">Messenger</span>📘</a>
+    <a href="https://wa.me/84905951842" target="_blank" class="fab-child fab-wa"><span class="fab-tooltip">WhatsApp</span>💬</a>
+    <a href="https://zalo.me/84905951842" target="_blank" class="fab-child fab-zalo"><span class="fab-tooltip">Zalo</span>💬</a>
+  </div>
+</div>
+
+<!-- MOBILE STICKY BAR -->
+<div class="mobile-sticky-bar">
+  <div class="sticky-bar-inner">
+    <a href="tel:+84905951842" class="sticky-bar-item"><span class="s-icon">📞</span>Gọi ngay</a>
+    <a href="https://zalo.me/84905951842" target="_blank" class="sticky-bar-item"><span class="s-icon">💬</span>Zalo</a>
+    <a href="https://wa.me/84905951842" target="_blank" class="sticky-bar-item"><span class="s-icon">💬</span>WhatsApp</a>
+    <a href="https://m.me/61579280855597" target="_blank" class="sticky-bar-item"><span class="s-icon">📘</span>Messenger</a>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

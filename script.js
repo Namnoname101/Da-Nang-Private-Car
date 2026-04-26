@@ -359,6 +359,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const lightbox    = document.getElementById('lightbox');
   const lightboxImg = document.getElementById('lightbox-img');
   const lightboxCounter = document.getElementById('lightbox-counter');
+  const lightboxCaption = document.getElementById('lightbox-caption');
   const galleryItems = () => [...document.querySelectorAll('.gallery-item')];
   let currentGalleryIdx = 0;
 
@@ -366,10 +367,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const items = galleryItems();
     if (!items.length) return;
     currentGalleryIdx = idx;
-    const img = items[idx].querySelector('img');
+    const item = items[idx];
+    const img = item.querySelector('img');
+    const captionTitle = item.getAttribute('data-caption') || '';
+    const captionLoc = item.getAttribute('data-location') || '';
+
     lightboxImg.src = img.src;
     lightboxImg.alt = img.alt;
     lightboxCounter.textContent = `${idx + 1} / ${items.length}`;
+    
+    if (captionTitle || captionLoc) {
+      lightboxCaption.innerHTML = `<div class="lb-title">${captionTitle}</div><div class="lb-loc">${captionLoc}</div>`;
+      lightboxCaption.classList.add('visible');
+    } else {
+      lightboxCaption.classList.remove('visible');
+    }
+    
     lightbox.classList.add('open');
     document.body.style.overflow = 'hidden';
   }
@@ -383,12 +396,24 @@ document.addEventListener('DOMContentLoaded', () => {
   function navigateLightbox(dir) {
     const items = galleryItems();
     currentGalleryIdx = (currentGalleryIdx + dir + items.length) % items.length;
-    const img = items[currentGalleryIdx].querySelector('img');
+    const item = items[currentGalleryIdx];
+    const img = item.querySelector('img');
+    const captionTitle = item.getAttribute('data-caption') || '';
+    const captionLoc = item.getAttribute('data-location') || '';
+
     lightboxImg.style.opacity = '0';
+    lightboxCaption.classList.remove('visible');
+    
     setTimeout(() => {
       lightboxImg.src = img.src;
       lightboxImg.alt = img.alt;
       lightboxCounter.textContent = `${currentGalleryIdx + 1} / ${items.length}`;
+      
+      if (captionTitle || captionLoc) {
+        lightboxCaption.innerHTML = `<div class="lb-title">${captionTitle}</div><div class="lb-loc">${captionLoc}</div>`;
+        lightboxCaption.classList.add('visible');
+      }
+      
       lightboxImg.style.opacity = '1';
     }, 150);
   }

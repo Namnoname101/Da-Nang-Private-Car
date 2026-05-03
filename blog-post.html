@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Bài viết — Private Car Tours Da Nang</title>
+<link rel="stylesheet" href="style.css"/>
+<style>
+.blog-hero { background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%); padding: 140px 0 60px; text-align: center; }
+.blog-hero h1 { color: var(--white); margin-bottom: 12px; font-size: 2rem; max-width: 700px; margin-left: auto; margin-right: auto; line-height: 1.4; }
+.blog-hero .post-meta { color: var(--text-light); font-size: .85rem; }
+.blog-hero .post-meta span { margin: 0 8px; }
+.post-content-section { padding: 60px 0 80px; background: var(--off-white); }
+.post-content-wrap { max-width: 800px; margin: 0 auto; background: var(--white); border-radius: var(--radius-lg); padding: 40px 48px; box-shadow: var(--shadow-sm); }
+.post-thumbnail { width: 100%; max-height: 420px; object-fit: cover; border-radius: var(--radius); margin-bottom: 32px; }
+.post-summary { font-size: 1.1rem; color: #555; line-height: 1.8; border-left: 4px solid var(--gold); padding-left: 20px; margin-bottom: 32px; font-style: italic; }
+.post-body { font-size: 1rem; line-height: 2; color: #333; }
+.post-body h1,.post-body h2,.post-body h3 { color: var(--navy); margin: 28px 0 14px; }
+.post-body p { margin-bottom: 16px; }
+.post-body img { max-width: 100%; border-radius: 8px; margin: 16px 0; }
+.post-body blockquote { border-left: 4px solid var(--gold); padding: 12px 20px; background: rgba(201,168,76,.06); margin: 20px 0; font-style: italic; }
+.post-back { display: inline-flex; align-items: center; gap: 6px; color: var(--gold-dark); font-weight: 600; text-decoration: none; margin-bottom: 24px; }
+.post-back:hover { color: var(--gold); }
+.post-loading { text-align: center; padding: 100px 0; color: #999; font-size: 1.1rem; }
+.post-error { text-align: center; padding: 80px 0; }
+.post-error h2 { color: var(--navy); margin-bottom: 12px; }
+.post-error p { color: #666; margin-bottom: 24px; }
+@media (max-width: 768px) {
+  .blog-hero { padding: 120px 0 40px; }
+  .blog-hero h1 { font-size: 1.4rem; padding: 0 16px; }
+  .post-content-wrap { padding: 24px 20px; margin: 0 12px; }
+}
+</style>
+</head>
+<body>
+
+<nav id="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-main">Private Car Tours</span>
+      <span class="logo-sub">Da Nang · Central Vietnam</span>
+    </a>
+    <ul class="nav-menu">
+      <li><a href="index.html">Trang chủ</a></li>
+      <li><a href="index.html#services">Tour</a></li>
+      <li><a href="index.html#contact">Liên hệ</a></li>
+      <li><a href="blog.html" style="color:var(--gold)">Blog</a></li>
+    </ul>
+    <div class="nav-cta">
+      <button class="btn btn-gold" data-open-modal>💬 Tư vấn ngay</button>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div id="mobile-menu" class="mobile-menu">
+  <ul>
+    <li><a href="index.html">Trang chủ</a></li>
+    <li><a href="index.html#services">Tour</a></li>
+    <li><a href="blog.html">Blog</a></li>
+  </ul>
+</div>
+
+<!-- HERO — Sẽ được JS điền tiêu đề bài viết -->
+<div class="blog-hero" id="post-hero">
+  <div class="container">
+    <h1 id="post-title">Đang tải...</h1>
+    <div class="post-meta">
+      <span id="post-date"></span>
+      <span id="post-status"></span>
+    </div>
+  </div>
+</div>
+
+<!-- NỘI DUNG BÀI VIẾT -->
+<section class="post-content-section">
+  <div class="container">
+    <div class="post-content-wrap" id="post-wrap">
+      <div class="post-loading" id="post-loading">
+        ⏳ Đang tải bài viết...
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-logo">Private Car Tours Da Nang</div>
+        <p class="footer-desc">Dịch vụ tour và xe riêng Miền Trung uy tín.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Điều hướng</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="index.html#services">Các tour</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Liên hệ</h4>
+        <div class="footer-contact-item"><span class="icon">📞</span><a href="tel:+84905951842">+84 90 595 18 42</a></div>
+        <div class="footer-contact-item"><span class="icon">📧</span><a href="mailto:dangvannghia1983@gmail.com">dangvannghia1983@gmail.com</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom"><p>Copyright © 2026 Private Car Tours Da Nang</p></div>
+</footer>
+
+<!-- POPUP MODAL -->
+<div id="contact-modal" class="modal-overlay">
+  <div class="modal-card">
+    <h3>Chọn Kênh Liên Hệ</h3>
+    <p class="modal-sub">Chúng tôi phản hồi trong vòng 15 phút ⚡</p>
+    <div class="modal-channels">
+      <a href="https://zalo.me/84905951842" target="_blank" class="modal-channel-btn ch-zalo"><span class="ch-emoji">💬</span>Zalo</a>
+      <a href="https://wa.me/84905951842" target="_blank" class="modal-channel-btn ch-whatsapp"><span class="ch-emoji">💬</span>WhatsApp</a>
+      <a href="https://m.me/61579280855597" target="_blank" class="modal-channel-btn ch-messenger"><span class="ch-emoji">📘</span>Messenger</a>
+      <a href="mailto:dangvannghia1983@gmail.com" class="modal-channel-btn ch-gmail"><span class="ch-emoji">📧</span>Gmail</a>
+    </div>
+    <button class="modal-close" data-modal-close>✕ Đóng</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+<script>
+/**
+ * BLOG POST VIEWER
+ * Tải và hiển thị bài viết từ API dựa trên ID trong URL
+ * URL format: blog-post.html?id=123
+ */
+(function() {
+  // Địa chỉ API backend — ĐỔI KHI DEPLOY LÊN SERVER THẬT
+  const API_URL = 'http://localhost:5000/api';
+
+  // Lấy ID bài viết từ URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const postId = urlParams.get('id');
+
+  const titleEl = document.getElementById('post-title');
+  const dateEl = document.getElementById('post-date');
+  const wrapEl = document.getElementById('post-wrap');
+  const loadingEl = document.getElementById('post-loading');
+
+  // Nếu không có ID → hiển thị lỗi
+  if (!postId) {
+    showError();
+    return;
+  }
+
+  // Gọi API lấy bài viết
+  fetch(API_URL + '/posts/' + postId)
+    .then(function(res) { return res.json(); })
+    .then(function(data) {
+      if (!data.success || !data.data) {
+        showError();
+        return;
+      }
+      renderPost(data.data);
+    })
+    .catch(function() {
+      showError();
+    });
+
+  function renderPost(post) {
+    // Cập nhật title trang
+    document.title = post.title + ' — Private Car Tours Da Nang';
+    titleEl.textContent = post.title;
+
+    // Ngày tạo
+    var d = new Date(post.created_at);
+    dateEl.textContent = '📅 ' + d.toLocaleDateString('vi-VN');
+
+    // Nội dung bài viết
+    var html = '<a href="blog.html" class="post-back">← Quay lại danh sách bài viết</a>';
+
+    // Ảnh đại diện
+    if (post.thumbnail) {
+      html += '<img src="' + post.thumbnail + '" alt="' + post.title + '" class="post-thumbnail"/>';
+    }
+
+    // Tóm tắt
+    if (post.summary) {
+      html += '<div class="post-summary">' + post.summary + '</div>';
+    }
+
+    // Nội dung chính
+    html += '<div class="post-body">' + (post.content || '<p>Chưa có nội dung.</p>') + '</div>';
+
+    wrapEl.innerHTML = html;
+  }
+
+  function showError() {
+    titleEl.textContent = 'Không tìm thấy bài viết';
+    wrapEl.innerHTML = '<div class="post-error">' +
+      '<h2>😔 Bài viết không tồn tại</h2>' +
+      '<p>Bài viết bạn tìm không tồn tại hoặc đã bị xóa.</p>' +
+      '<a href="blog.html" class="btn btn-gold">← Về trang Blog</a>' +
+      '</div>';
+  }
+})();
+</script>
+</body>
+</html>

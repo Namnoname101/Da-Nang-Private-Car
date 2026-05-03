@@ -135,7 +135,97 @@ const I18N_MAP = {
     '.footer-links li:nth-child(6) a': 'Blog',
     '.footer-bottom p': 'Copyright © 2026 Private Car Tours Da Nang — Tất cả quyền được bảo lưu',
 
+    /* CAR SHOWCASE */
+    '#car-showcase .gold-accent': 'XE CỦA CHÚNG TÔI',
+    '#car-showcase .section-title': 'Đội Xe Sạch Sẽ & Đời Mới',
+    '#car-showcase .section-subtitle': 'Toyota hiện đại — điều hòa mát lạnh, nội thất thoải mái cho mọi hành trình.',
+    '.car-card:nth-child(1) .car-card-title': 'Xe 7 Chỗ Toyota',
+    '.car-card:nth-child(1) .car-card-desc': 'Phù hợp nhóm gia đình & bạn bè · Điều hòa 2 dàn · Cốp rộng',
+    '.car-card:nth-child(2) .car-card-title': 'Xe 16 Chỗ Toyota VAN',
+    '.car-card:nth-child(2) .car-card-desc': 'Lý tưởng cho nhóm đông · Tiết kiệm · Linh hoạt',
+
+    /* PHOTO GALLERY */
+    '#photo-gallery .gold-accent': 'THƯ VIỆN ẢNH',
+    '#photo-gallery .section-title': 'Khoảnh Khắc Đáng Nhớ Cùng Khách Hàng',
+    '#photo-gallery .section-subtitle': 'Những hình ảnh thực tế từ các chuyến đi — niềm vui của khách hàng là động lực của chúng tôi.',
+    '.gallery-load-more .btn-gold': '💬 Đặt tour & chụp kỷ niệm cùng chúng tôi',
+
+    /* ABOUT BADGE */
+    '.about-img-badge .badge-text': 'Năm kinh nghiệm',
+
+    /* TOUR BADGES */
+    '.tour-card:nth-child(1) .tour-badge': '🔥 Phổ biến',
+    '.tour-card:nth-child(2) .tour-badge': '⭐ HOT nhất',
+    '.tour-card:nth-child(3) .tour-badge': '🏯 Di sản UNESCO',
+    '.tour-card:nth-child(4) .tour-badge': '🛕 UNESCO',
+    '.tour-card:nth-child(5) .tour-badge': '🌉 City Tour',
+    '.tour-card:nth-child(6) .tour-badge': '✨ Riêng tư',
+
+    /* TOUR HIGHLIGHTS — Tour 1: Hoi An */
+    '.tour-card:nth-child(1) .tour-highlights li:nth-child(1)': '⛰ Ngũ Hành Sơn',
+    '.tour-card:nth-child(1) .tour-highlights li:nth-child(2)': '🧵 Làng Lụa',
+    '.tour-card:nth-child(1) .tour-highlights li:nth-child(3)': '🌴 Thuyền Dừa',
+    '.tour-card:nth-child(1) .tour-highlights li:nth-child(4)': '🏮 Phố Cổ',
+    /* Tour 2: Ba Na */
+    '.tour-card:nth-child(2) .tour-highlights li:nth-child(1)': '🌉 Cầu Vàng',
+    '.tour-card:nth-child(2) .tour-highlights li:nth-child(2)': '🌸 Le Jardin',
+    '.tour-card:nth-child(2) .tour-highlights li:nth-child(3)': '🏰 Làng Pháp',
+    '.tour-card:nth-child(2) .tour-highlights li:nth-child(4)': '🎢 Fantasy Park',
+    /* Tour 3: Hue */
+    '.tour-card:nth-child(3) .tour-highlights li:nth-child(1)': '⛰ Đèo Hải Vân',
+    '.tour-card:nth-child(3) .tour-highlights li:nth-child(2)': '🏯 Đại Nội',
+    '.tour-card:nth-child(3) .tour-highlights li:nth-child(3)': '🛕 Chùa Thiên Mụ',
+    '.tour-card:nth-child(3) .tour-highlights li:nth-child(4)': '⚰️ Lăng tẩm',
+    /* Tour 4: My Son */
+    '.tour-card:nth-child(4) .tour-highlights li:nth-child(1)': '🛕 Tháp Chăm cổ',
+    '.tour-card:nth-child(4) .tour-highlights li:nth-child(2)': '🎭 Vũ điệu Chăm Pa',
+    '.tour-card:nth-child(4) .tour-highlights li:nth-child(3)': '📸 Tháp Kalan',
+    '.tour-card:nth-child(4) .tour-highlights li:nth-child(4)': '🌿 Rừng xanh',
+    /* Tour 5: City Tour */
+    '.tour-card:nth-child(5) .tour-highlights li:nth-child(1)': '🌉 Cầu Rồng',
+    '.tour-card:nth-child(5) .tour-highlights li:nth-child(2)': '🛕 Chùa Linh Ứng',
+    '.tour-card:nth-child(5) .tour-highlights li:nth-child(3)': '⛰ Ngũ Hành Sơn',
+    '.tour-card:nth-child(5) .tour-highlights li:nth-child(4)': '🏖 Mỹ Khê',
+
+    /* TOUR ITINERARY — Tour 1: Hoi An */
+    '.tour-card:nth-child(1) .itinerary-item:nth-child(1) span': '07:30 — Đón tại khách sạn ở Đà Nẵng',
+    '.tour-card:nth-child(1) .itinerary-item:nth-child(2) span': '08:00 — Tham quan Ngũ Hành Sơn & hang động',
+    '.tour-card:nth-child(1) .itinerary-item:nth-child(3) span': '10:00 — Làng Lụa Hội An & thuyền thúng tre',
+    '.tour-card:nth-child(1) .itinerary-item:nth-child(4) span': '12:00 — Ăn trưa (tự túc) tại Hội An',
+    '.tour-card:nth-child(1) .itinerary-item:nth-child(5) span': '14:00 — Khám phá Phố Cổ Hội An, Chùa Cầu',
+    '.tour-card:nth-child(1) .itinerary-item:nth-child(6) span': '17:00 — Biển Cửa Đại hoàng hôn',
+    '.tour-card:nth-child(1) .itinerary-item:nth-child(7) span': '19:00 — Hội An đêm đèn lồng & trả khách sạn',
+    /* Tour 2: Ba Na */
+    '.tour-card:nth-child(2) .itinerary-item:nth-child(1) span': '07:30 — Đón tại khách sạn, di chuyển lên núi',
+    '.tour-card:nth-child(2) .itinerary-item:nth-child(2) span': '08:30 — Cáp treo lên đỉnh Bà Nà (kỷ lục thế giới)',
+    '.tour-card:nth-child(2) .itinerary-item:nth-child(3) span': '09:00 — Cầu Vàng check-in & chụp ảnh',
+    '.tour-card:nth-child(2) .itinerary-item:nth-child(4) span': '10:30 — Vườn hoa Le Jardin d\'Amour',
+    '.tour-card:nth-child(2) .itinerary-item:nth-child(5) span': '12:00 — Ăn trưa tại Bà Nà',
+    '.tour-card:nth-child(2) .itinerary-item:nth-child(6) span': '13:30 — Làng Pháp cổ tích & Fantasy Park',
+    '.tour-card:nth-child(2) .itinerary-item:nth-child(7) span': '17:00 — Xuống núi, trả về khách sạn',
+    /* Tour 3: Hue */
+    '.tour-card:nth-child(3) .itinerary-item:nth-child(1) span': '06:30 — Đón sớm, vượt Đèo Hải Vân',
+    '.tour-card:nth-child(3) .itinerary-item:nth-child(2) span': '08:00 — Vịnh Lăng Cô ngắm cảnh',
+    '.tour-card:nth-child(3) .itinerary-item:nth-child(3) span': '09:30 — Đại Nội – Hoàng cung triều Nguyễn',
+    '.tour-card:nth-child(3) .itinerary-item:nth-child(4) span': '12:00 — Ăn trưa cơm Huế chính hiệu',
+    '.tour-card:nth-child(3) .itinerary-item:nth-child(5) span': '13:30 — Chùa Thiên Mụ & Lăng Khải Định',
+    '.tour-card:nth-child(3) .itinerary-item:nth-child(6) span': '16:30 — Về Đà Nẵng qua hầm Hải Vân',
+    /* Tour 4: My Son */
+    '.tour-card:nth-child(4) .itinerary-item:nth-child(1) span': '08:00 — Đón tại Đà Nẵng / Hội An',
+    '.tour-card:nth-child(4) .itinerary-item:nth-child(2) span': '09:30 — Thánh địa Mỹ Sơn – tham quan quần thể tháp Chăm',
+    '.tour-card:nth-child(4) .itinerary-item:nth-child(3) span': '11:00 — Xem biểu diễn vũ điệu Chăm Pa',
+    '.tour-card:nth-child(4) .itinerary-item:nth-child(4) span': '12:30 — Ăn trưa & trả về',
+    /* Tour 5: City Tour */
+    '.tour-card:nth-child(5) .itinerary-item:nth-child(1) span': '08:00 — Đón tại khách sạn',
+    '.tour-card:nth-child(5) .itinerary-item:nth-child(2) span': '08:30 — Ngũ Hành Sơn & hang động',
+    '.tour-card:nth-child(5) .itinerary-item:nth-child(3) span': '10:30 — Chùa Linh Ứng (Bán đảo Sơn Trà)',
+    '.tour-card:nth-child(5) .itinerary-item:nth-child(4) span': '12:00 — Ăn trưa hải sản Mỹ Khê',
+    '.tour-card:nth-child(5) .itinerary-item:nth-child(5) span': '14:00 — Biển Mỹ Khê & Cầu Tình Yêu',
+    '.tour-card:nth-child(5) .itinerary-item:nth-child(6) span': '16:00 — Chợ Hàn ẩm thực',
+    '.tour-card:nth-child(5) .itinerary-item:nth-child(7) span': '20:00 — Cầu Rồng phun lửa (cuối tuần)',
+
     /* MODAL */
+
     '[data-lang-key="modal-title"]': 'Chọn Kênh Liên Hệ',
     '[data-lang-key="modal-sub"]': 'Chúng tôi phản hồi trong vòng 15 phút ⚡',
     '.modal-close': '✕ Đóng',
@@ -288,7 +378,97 @@ const I18N_MAP = {
     '.footer-links li:nth-child(6) a': 'Blog',
     '.footer-bottom p': 'Copyright © 2026 Private Car Tours Da Nang — All rights reserved',
 
+    /* CAR SHOWCASE */
+    '#car-showcase .gold-accent': 'OUR VEHICLES',
+    '#car-showcase .section-title': 'Clean & New Fleet',
+    '#car-showcase .section-subtitle': 'Modern Toyota — cool air-conditioning, comfortable interior for every journey.',
+    '.car-card:nth-child(1) .car-card-title': 'Toyota 7-Seat Car',
+    '.car-card:nth-child(1) .car-card-desc': 'Perfect for families & groups · Dual AC · Spacious trunk',
+    '.car-card:nth-child(2) .car-card-title': 'Toyota 16-Seat VAN',
+    '.car-card:nth-child(2) .car-card-desc': 'Ideal for large groups · Economical · Flexible',
+
+    /* PHOTO GALLERY */
+    '#photo-gallery .gold-accent': 'PHOTO GALLERY',
+    '#photo-gallery .section-title': 'Memorable Moments With Our Guests',
+    '#photo-gallery .section-subtitle': 'Real photos from our trips — our guests\' happiness is our greatest motivation.',
+    '.gallery-load-more .btn-gold': '💬 Book a Tour & Create Memories With Us',
+
+    /* ABOUT BADGE */
+    '.about-img-badge .badge-text': 'Years of Experience',
+
+    /* TOUR BADGES */
+    '.tour-card:nth-child(1) .tour-badge': '🔥 Popular',
+    '.tour-card:nth-child(2) .tour-badge': '⭐ HOTTEST',
+    '.tour-card:nth-child(3) .tour-badge': '🏯 UNESCO Heritage',
+    '.tour-card:nth-child(4) .tour-badge': '🛕 UNESCO',
+    '.tour-card:nth-child(5) .tour-badge': '🌉 City Tour',
+    '.tour-card:nth-child(6) .tour-badge': '✨ Private',
+
+    /* TOUR HIGHLIGHTS — Tour 1: Hoi An */
+    '.tour-card:nth-child(1) .tour-highlights li:nth-child(1)': '⛰ Marble Mountains',
+    '.tour-card:nth-child(1) .tour-highlights li:nth-child(2)': '🧵 Silk Village',
+    '.tour-card:nth-child(1) .tour-highlights li:nth-child(3)': '🌴 Basket Boat',
+    '.tour-card:nth-child(1) .tour-highlights li:nth-child(4)': '🏮 Ancient Town',
+    /* Tour 2: Ba Na */
+    '.tour-card:nth-child(2) .tour-highlights li:nth-child(1)': '🌉 Golden Bridge',
+    '.tour-card:nth-child(2) .tour-highlights li:nth-child(2)': '🌸 Le Jardin',
+    '.tour-card:nth-child(2) .tour-highlights li:nth-child(3)': '🏰 French Village',
+    '.tour-card:nth-child(2) .tour-highlights li:nth-child(4)': '🎢 Fantasy Park',
+    /* Tour 3: Hue */
+    '.tour-card:nth-child(3) .tour-highlights li:nth-child(1)': '⛰ Hai Van Pass',
+    '.tour-card:nth-child(3) .tour-highlights li:nth-child(2)': '🏯 Imperial City',
+    '.tour-card:nth-child(3) .tour-highlights li:nth-child(3)': '🛕 Thien Mu Pagoda',
+    '.tour-card:nth-child(3) .tour-highlights li:nth-child(4)': '⚰️ Royal Tombs',
+    /* Tour 4: My Son */
+    '.tour-card:nth-child(4) .tour-highlights li:nth-child(1)': '🛕 Ancient Cham Towers',
+    '.tour-card:nth-child(4) .tour-highlights li:nth-child(2)': '🎭 Cham Dance Performance',
+    '.tour-card:nth-child(4) .tour-highlights li:nth-child(3)': '📸 Kalan Tower',
+    '.tour-card:nth-child(4) .tour-highlights li:nth-child(4)': '🌿 Jungle',
+    /* Tour 5: City Tour */
+    '.tour-card:nth-child(5) .tour-highlights li:nth-child(1)': '🌉 Dragon Bridge',
+    '.tour-card:nth-child(5) .tour-highlights li:nth-child(2)': '🛕 Linh Ung Pagoda',
+    '.tour-card:nth-child(5) .tour-highlights li:nth-child(3)': '⛰ Marble Mountains',
+    '.tour-card:nth-child(5) .tour-highlights li:nth-child(4)': '🏖 My Khe Beach',
+
+    /* TOUR ITINERARY — Tour 1: Hoi An */
+    '.tour-card:nth-child(1) .itinerary-item:nth-child(1) span': '07:30 — Hotel pickup in Da Nang',
+    '.tour-card:nth-child(1) .itinerary-item:nth-child(2) span': '08:00 — Marble Mountains & caves',
+    '.tour-card:nth-child(1) .itinerary-item:nth-child(3) span': '10:00 — Hoi An Silk Village & basket boat',
+    '.tour-card:nth-child(1) .itinerary-item:nth-child(4) span': '12:00 — Lunch (own expense) in Hoi An',
+    '.tour-card:nth-child(1) .itinerary-item:nth-child(5) span': '14:00 — Hoi An Ancient Town & Japanese Bridge',
+    '.tour-card:nth-child(1) .itinerary-item:nth-child(6) span': '17:00 — Cua Dai Beach sunset',
+    '.tour-card:nth-child(1) .itinerary-item:nth-child(7) span': '19:00 — Hoi An lantern night & hotel drop-off',
+    /* Tour 2: Ba Na */
+    '.tour-card:nth-child(2) .itinerary-item:nth-child(1) span': '07:30 — Hotel pickup, drive up the mountain',
+    '.tour-card:nth-child(2) .itinerary-item:nth-child(2) span': '08:30 — Cable car to Ba Na summit (world record)',
+    '.tour-card:nth-child(2) .itinerary-item:nth-child(3) span': '09:00 — Golden Bridge photo stop',
+    '.tour-card:nth-child(2) .itinerary-item:nth-child(4) span': "10:30 — Le Jardin d'Amour flower garden",
+    '.tour-card:nth-child(2) .itinerary-item:nth-child(5) span': '12:00 — Lunch at Ba Na Hills',
+    '.tour-card:nth-child(2) .itinerary-item:nth-child(6) span': '13:30 — French Village & Fantasy Park',
+    '.tour-card:nth-child(2) .itinerary-item:nth-child(7) span': '17:00 — Cable car down, hotel drop-off',
+    /* Tour 3: Hue */
+    '.tour-card:nth-child(3) .itinerary-item:nth-child(1) span': '06:30 — Early pickup, cross Hai Van Pass',
+    '.tour-card:nth-child(3) .itinerary-item:nth-child(2) span': '08:00 — Lang Co Bay scenic viewpoint',
+    '.tour-card:nth-child(3) .itinerary-item:nth-child(3) span': '09:30 — Imperial City — Nguyen Dynasty Palace',
+    '.tour-card:nth-child(3) .itinerary-item:nth-child(4) span': '12:00 — Authentic Hue royal cuisine lunch',
+    '.tour-card:nth-child(3) .itinerary-item:nth-child(5) span': '13:30 — Thien Mu Pagoda & Khai Dinh Tomb',
+    '.tour-card:nth-child(3) .itinerary-item:nth-child(6) span': '16:30 — Return to Da Nang via Hai Van Tunnel',
+    /* Tour 4: My Son */
+    '.tour-card:nth-child(4) .itinerary-item:nth-child(1) span': '08:00 — Pickup in Da Nang / Hoi An',
+    '.tour-card:nth-child(4) .itinerary-item:nth-child(2) span': '09:30 — My Son Sanctuary — Cham tower complex',
+    '.tour-card:nth-child(4) .itinerary-item:nth-child(3) span': '11:00 — Cham dance performance',
+    '.tour-card:nth-child(4) .itinerary-item:nth-child(4) span': '12:30 — Lunch & return',
+    /* Tour 5: City Tour */
+    '.tour-card:nth-child(5) .itinerary-item:nth-child(1) span': '08:00 — Hotel pickup',
+    '.tour-card:nth-child(5) .itinerary-item:nth-child(2) span': '08:30 — Marble Mountains & caves',
+    '.tour-card:nth-child(5) .itinerary-item:nth-child(3) span': '10:30 — Linh Ung Pagoda (Son Tra Peninsula)',
+    '.tour-card:nth-child(5) .itinerary-item:nth-child(4) span': '12:00 — My Khe seafood lunch',
+    '.tour-card:nth-child(5) .itinerary-item:nth-child(5) span': '14:00 — My Khe Beach & Love Bridge',
+    '.tour-card:nth-child(5) .itinerary-item:nth-child(6) span': '16:00 — Han Market street food',
+    '.tour-card:nth-child(5) .itinerary-item:nth-child(7) span': '20:00 — Dragon Bridge fire show (weekends)',
+
     /* MODAL */
+
     '[data-lang-key="modal-title"]': 'Choose Your Contact Channel',
     '[data-lang-key="modal-sub"]': 'We respond within 15 minutes ⚡',
     '.modal-close': '✕ Close',

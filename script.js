@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ── 7. TOUR ACCORDION ─────────────────────────────────────
   // Get current language for button text
   function getTourBtnText(isOpen) {
-    const lang = document.documentElement.lang || 'vi';
+    const lang = document.documentElement.lang || 'en';
     if (isOpen) return lang === 'en' ? '📋 Hide Itinerary ▲' : '📋 Ẩn lịch trình ▲';
     return lang === 'en' ? '📋 View Itinerary ▼' : '📋 Xem lịch trình ▼';
   }
@@ -352,9 +352,9 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.addEventListener('click', () => applyLanguage(btn.dataset.lang))
   );
 
-  // Restore saved preference
-  const saved = localStorage.getItem('pct-lang');
-  if (saved && saved !== 'vi') applyLanguage(saved);
+  // Restore saved preference — default to English for international visitors
+  const saved = localStorage.getItem('pct-lang') || 'en';
+  applyLanguage(saved);
   // ── 13. PHOTO GALLERY LIGHTBOX ────────────────────────────
   const lightbox    = document.getElementById('lightbox');
   const lightboxImg = document.getElementById('lightbox-img');

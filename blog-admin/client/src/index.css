@@ -1,0 +1,133 @@
+/**
+ * GLOBAL CSS — Styles chung cho toàn bộ ứng dụng Admin
+ */
+
+/* ============================
+   IMPORT FONT
+   ============================ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* ============================
+   RESET & BASE
+   ============================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #f5f5f5;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* ============================
+   QUILL EDITOR — Tuỳ chỉnh styles
+   ============================ */
+
+/* Container editor */
+.ql-container {
+  min-height: 250px !important;
+  font-size: 15px !important;
+  font-family: 'Inter', sans-serif !important;
+  border-bottom-left-radius: 8px !important;
+  border-bottom-right-radius: 8px !important;
+}
+
+/* Toolbar */
+.ql-toolbar {
+  border-top-left-radius: 8px !important;
+  border-top-right-radius: 8px !important;
+  background: #fafafa !important;
+}
+
+/* Editor area */
+.ql-editor {
+  min-height: 250px !important;
+  line-height: 1.8 !important;
+  padding: 16px 20px !important;
+}
+
+.ql-editor p {
+  margin-bottom: 12px;
+}
+
+/* Placeholder */
+.ql-editor.ql-blank::before {
+  color: #bbb !important;
+  font-style: normal !important;
+}
+
+/* ============================
+   ANT DESIGN — Ghi đè styles
+   ============================ */
+
+/* Bảng - header */
+.ant-table-thead > tr > th {
+  font-weight: 600 !important;
+  font-size: 13px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+  color: #555 !important;
+}
+
+/* Form label */
+.ant-form-item-label > label {
+  font-weight: 600 !important;
+  color: #333 !important;
+}
+
+/* Card hover effect */
+.ant-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* ============================
+   SCROLLBAR — Tuỳ chỉnh thanh cuộn
+   ============================ */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+/* ============================
+   ANIMATION — Hiệu ứng nhẹ
+   ============================ */
+.ant-btn {
+  transition: all 0.3s ease !important;
+}
+
+.ant-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ============================
+   RESPONSIVE
+   ============================ */
+@media (max-width: 768px) {
+  .ant-layout-content {
+    margin: 12px !important;
+    padding: 16px !important;
+  }
+}

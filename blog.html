@@ -121,6 +121,10 @@
 
 <section class="blog-section">
   <div class="container">
+    <!-- BÀI VIẾT MỚI TỪ HỆ THỐNG ADMIN (tự động tải từ API) -->
+    <div class="blog-full-grid" id="api-posts-grid"></div>
+
+    <!-- BÀI VIẾT CŨ (hardcode) -->
     <div class="blog-full-grid">
 
       <a href="hoi-an-3-ngay-2-dem.html" class="blog-full-card">
@@ -220,7 +224,10 @@
       </div>
     </div>
   </div>
-  <div class="footer-bottom"><p>Copyright © 2026 Private Car Tours Da Nang</p></div>
+  <div class="footer-bottom">
+    <p>Copyright © 2026 Private Car Tours Da Nang</p>
+    <p style="margin-top:8px;"><a href="blog-admin/client/" target="_blank" style="color:rgba(255,255,255,.3);font-size:.7rem;text-decoration:none;">🔐 Quản trị Blog</a></p>
+  </div>
 </footer>
 
 <!-- POPUP MODAL -->
@@ -260,5 +267,40 @@
 </div>
 
 <script src="script.js"></script>
+<script>
+/**
+ * TẢI BÀI VIẾT MỚI TỪ API
+ * Hiển thị các bài viết published từ hệ thống Blog Admin
+ * ĐỔI API_URL khi deploy lên server thật
+ */
+(function() {
+  var API_URL = 'http://localhost:5000/api';
+  var grid = document.getElementById('api-posts-grid');
+
+  fetch(API_URL + '/posts?status=published&limit=20')
+    .then(function(r) { return r.json(); })
+    .then(function(data) {
+      if (!data.success || !data.data || data.data.length === 0) return;
+      var html = '';
+      data.data.forEach(function(post) {
+        var d = new Date(post.created_at);
+        var dateStr = d.toLocaleDateString('vi-VN');
+        var imgHtml = post.thumbnail
+          ? '<div class="blog-full-img" style="padding:0;background:none;"><img src="' + post.thumbnail + '" style="width:100%;height:100%;object-fit:cover;" alt="' + post.title + '"/></div>'
+          : '<div class="blog-full-img">📝</div>';
+        html += '<a href="blog-post.html?id=' + post.id + '" class="blog-full-card">'
+          + imgHtml
+          + '<div class="blog-full-body">'
+          + '<div class="blog-full-meta"><span class="blog-full-cat">Blog</span><span class="blog-full-date">' + dateStr + '</span></div>'
+          + '<h2>' + post.title + '</h2>'
+          + '<p>' + (post.summary || '') + '</p>'
+          + '<span class="blog-read-more">Đọc tiếp →</span>'
+          + '</div></a>';
+      });
+      grid.innerHTML = html;
+    })
+    .catch(function() { /* API chưa chạy — ẩn, hiển thị bài cũ hardcode */ });
+})();
+</script>
 </body>
 </html>

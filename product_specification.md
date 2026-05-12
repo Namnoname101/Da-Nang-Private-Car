@@ -238,7 +238,7 @@ Mỗi tour card gồm: ảnh + badge + highlights + "Xem lịch trình" (accordi
 - [ ] **Blog detail pages** — Hiện tại các link blog đang link về `#` (placeholder)
 - [ ] **Google Analytics** — Tracking lượt truy cập và conversion
 - [ ] **Google Tag Manager** — Event tracking (click CTA, form submit)
-- [ ] **i18n cho blog.html** — Blog page chưa có language toggle
+- [x] **i18n cho blog.html** — Blog page chưa có language toggle
 
 ### 🟡 Cải tiến UX (v1.2)
 - [ ] **Booking calendar** — Tích hợp Calendly hoặc datepicker cho phép đặt lịch trực tiếp

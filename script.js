@@ -157,14 +157,34 @@ document.addEventListener('DOMContentLoaded', () => {
   if (total > 0) setInterval(() => goTo(sliderIdx + 1), 5000);
 
   // ── 9. CONTACT FORM ───────────────────────────────────────
-  document.getElementById('contact-form')?.addEventListener('submit', e => {
+  document.getElementById('contact-form')?.addEventListener('submit', async (e) => {
     e.preventDefault();
-    const btn = e.target.querySelector('.form-submit');
-    btn.disabled = true; btn.textContent = '...';
-    setTimeout(() => {
-      document.getElementById('form-success').style.display = 'block';
-      e.target.reset(); btn.style.display = 'none';
-    }, 1000);
+    const form = e.target;
+    const btn = form.querySelector('.form-submit');
+    const originalText = btn.textContent;
+    btn.disabled = true; 
+    btn.textContent = 'Đang gửi...';
+
+    try {
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      });
+      if (response.ok) {
+        document.getElementById('form-success').style.display = 'block';
+        form.reset(); 
+        btn.style.display = 'none';
+      } else {
+        alert('Có lỗi xảy ra, vui lòng thử lại sau.');
+        btn.disabled = false;
+        btn.textContent = originalText;
+      }
+    } catch (error) {
+      alert('Không thể kết nối máy chủ, vui lòng kiểm tra mạng.');
+      btn.disabled = false;
+      btn.textContent = originalText;
+    }
   });
 
   // ── 10. FADE-UP ───────────────────────────────────────────
